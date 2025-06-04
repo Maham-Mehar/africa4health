@@ -2,7 +2,7 @@ import { ourAimData } from "@/Data/ouraim";
 
 const OurAim = () => {
     return (
-        <section className="py-16 bg-white">
+        <section className="pt-15 bg-white">
             <div className="max-w-7xl mx-auto xl:px-0 lg:px-2 px-4">
                 <div>
                     {ourAimData.map((item) => {

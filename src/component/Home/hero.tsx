@@ -38,20 +38,20 @@ const Hero = () => {
 
       {/* Left Content */}
       <div className="relative z-10 ps-[120px] flex flex-col gap-6 max-w-3xl">
-        <p className="text-4xl md:text-[64px] font-extrabold text-[#621843] leading-snug">
+        <p className="text-4xl md:text-[54px] font-extrabold text-[#621843] leading-snug">
           Impr<span className="text-[#F37021]">o</span>ving Health <br />
           Outc<span className="text-[#F37021]">o</span>mes Acr
           <span className="text-[#F37021]">o</span>ss Africa
         </p>
 
-        <button className="bg-[#F37021] text-white w-[190px] mb-[70px] text-2xl py-3 font-semibold rounded-full hover:bg-[#d45f1c] transition">
+        <button className="bg-[#F37021] text-white w-[190px] mb-[80px] text-2xl py-3 font-semibold rounded-full hover:bg-[#d45f1c] transition">
           Donate Now
         </button>
       </div>
 
 
       {/* Cards at the bottom left aligned like Figma */}
-      <div className="absolute bottom-0 left-[120px] px-8 py-4 z-20 w-[calc(100%-120px)] max-w-7xl bg-[#FE9430] flex justify-between bottom-[22px]">
+      <div className="absolute bottom-0 left-[120px] rounded-xl px-8 py-4 z-20 w-[calc(100%-120px)] max-w-7xl bg-[#FE9430] flex justify-between bottom-[22px]">
         <div>
           <p className="text-[32px] font-extrabold text-[#621843] text-center"> 350+ <span className="text-white">villages</span></p>
           <p className="text-[24px] font-semi-bold text-white max-w-2xs text-center">Supported with essential resources and services</p>

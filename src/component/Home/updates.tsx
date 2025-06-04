@@ -4,7 +4,7 @@ import PngIcons from "@/Icons/pngIcons";
 
 const Updates = () => {
     return (
-        <section className="py-16 bg-white py-12">
+        <section className="pb-16  bg-white pb-12 ">
             <div className="max-w-7xl mx-auto px-6 py-10">
                 {/* Heading Section */}
                 <div className="mb-12 text-center">

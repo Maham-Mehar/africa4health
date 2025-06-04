@@ -12,7 +12,7 @@ type FooterLinkSection = {
 const footerLinks: FooterLinkSection[] = [
   {
     title: "About",
-    links: ["Our Mission", "Our Team", "Partners", "Impact"],
+    links: [ "Partners", "Impact"],
   },
   {
     title: "Initiatives",
@@ -97,12 +97,9 @@ const Footer: FC = () => {
         </div>
       </div>
 
-        <footer className="w-full max-w-7xl mx-auto py-6 mt-4 border-t-2 border-[#A47F94] py-3 text-xs text-gray-400 flex flex-col sm:flex-row justify-between items-center sm:items-end gap-2 sm:gap-0">
+        <footer className="w-full max-w-7xl flex justify-center mx-auto py-6 mt-4 border-t-2 border-[#A47F94] py-3 text-xs text-gray-400 flex flex-col sm:flex-row justify-between items-center sm:items-end gap-2 sm:gap-0">
           <p className="text-center font-medium text-sm text-gray-100 sm:text-left">© 2025 Africa for Health. All rights reserved.</p>
-          <div className="flex gap-4 text-center sm:text-right">
-            <p className="cursor-pointer text-sm font-medium text-gray-100 hover:text-gray-600 transition">Privacy Policy</p>
-            <p className="cursor-pointer text-sm font-medium text-gray-100 hover:text-gray-600 transition">Terms & Conditions</p>
-          </div>
+          
         </footer>
   
 

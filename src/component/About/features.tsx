@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import PngIcons from "@/Icons/pngIcons";
 import { initiatives, Initiative } from "@/Data/features";
 
 const Initiatives = () => {
@@ -14,7 +15,15 @@ const Initiatives = () => {
   let contentIndex = 1;
 
   return (
-    <section className="max-w-6xl mx-auto px-4 py-16 space-y-16">
+    <div className="relative">
+      <div className="absolute top-0 left-0">
+              <img src={PngIcons.image1} alt="" />
+            </div>
+            <div className="absolute bottom-0 right-0">
+              <img src={PngIcons.image2} alt="" />
+            </div>
+    <section className="relative max-w-6xl mx-auto px-4 pt-10 space-y-16">
+        
       {rows.map(([left, right], index) => (
         <div key={index} className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Left Column */}
@@ -101,6 +110,7 @@ const Initiatives = () => {
         </div>
       ))}
     </section>
+    </div>
   );
 };
 

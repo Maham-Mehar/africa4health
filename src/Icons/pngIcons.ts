@@ -13,6 +13,20 @@ var PngIcons = {
     f2: "/images/f2.png",
     f3: "/images/f3.png",
     f4: "/images/f4.png",
+    c1: "/images/C1.png",
+    c2: "/images/C2.png",
+    c3: "/images/C3.png",
+    c4: "/images/C4.png",
+    c5: "/images/C5.png",
+    c6: "/images/C6.png",
+    c7: "/images/C7.png",
+    c8: "/images/C8.png",
+    c9: "/images/C9.png",
+    c10: "/images/C10.png",
+    c11: "/images/C11.png",
+    image1: "/images/image1.png",
+    image2: "/images/image2.png",
+
 
 }
 export default PngIcons;

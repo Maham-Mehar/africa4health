@@ -17,7 +17,7 @@ function HeroSection(props: aboutData) {
       <div className="relative z-10 px-6 pb-10">
         <div>
           <p className="text-3xl max-w-2xl font-bold mb-4 text-[80px] font-extrabold">  {props.title}</p>
-          <p className="max-w-xl text-2xl font-medium pb-[80px]">
+          <p className="max-w-xl text-2xl font-medium pb-[65px]">
             {props.text}
           </p>
         </div>
