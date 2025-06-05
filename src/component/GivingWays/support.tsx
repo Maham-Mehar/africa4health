@@ -14,41 +14,45 @@ const images = [
 const SupportSection = () => {
   const [shuffledImages, setShuffledImages] = useState(images);
 
-  // Shuffle function
   const shuffleImages = () => {
     const shuffled = [...images].sort(() => Math.random() - 0.5);
     setShuffledImages(shuffled);
   };
 
-  // Auto reshuffle every 3 seconds
   useEffect(() => {
-    const interval = setInterval(() => {
-      shuffleImages();
-    }, 3000); // change shuffle speed here
-
-    return () => clearInterval(interval); // Cleanup
+    const interval = setInterval(shuffleImages, 3000);
+    return () => clearInterval(interval);
   }, []);
 
   const rotations = ["rotate-[-4deg]", "rotate-[2deg]", "rotate-[0deg]"];
 
   return (
-    <section className="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center">
-      {/* Image Stack */}
+    <section className="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center my-14">
+      {/* Stack container with background applied once */}
       <div className="relative w-full h-[400px]">
+        {/* Background covering left half only */}
+        <div
+          className="absolute top-[-45px] left-[-15px] h-[570px] w-[350px]  bg-left bg-no-repeat z-0"
+          style={{ backgroundImage: "url('/images/waysbg2.png')" }}
+        />
+
+        {/* Shuffled rotating images on top */}
         {shuffledImages.map((img, index) => (
           <div
             key={`${img}-${index}`}
-            className={`absolute top-0 left-0 w-full h-full transition-all duration-400 transform ${rotations[index % rotations.length]} z-[${index}]`}
+            className={`absolute top-0 left-0 w-full h-full transition-all duration-500 transform ${rotations[index % rotations.length]} z-[${index + 1}]`}
           >
             <Image
               src={img}
               alt={`Support image ${index + 1}`}
-              fill
-              className="object-cover "
+              width={504}
+              height={300}
+              className="object-cover w-[480px] h-[470px] rounded-lg"
             />
           </div>
         ))}
       </div>
+
 
       {/* Text Content */}
       <div>

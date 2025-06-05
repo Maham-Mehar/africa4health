@@ -8,7 +8,7 @@ const navItems = [
     { label: "About Us", href: "/about" },
     { label: "Initiatives", href: "/initiatives" },
     { label: "Ways to Give", href: "/ways" },
-    { label: "Get Involved", href: "/get-involved" },
+    { label: "Get Involved", href: "/getinvolved" },
 ];
 
 const Drawer = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) => (

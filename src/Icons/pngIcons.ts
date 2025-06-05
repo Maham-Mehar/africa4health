@@ -44,5 +44,16 @@ var PngIcons = {
     bg: "/images/waysbg.png",
 
 
+    // Get Involved
+    participent1: "/images/participent1.png",
+    participent2: "/images/participent2.png",
+    participent3: "/images/participent3.png",
+    adv1: "/images/adv1.png",
+    adv2: "/images/adv2.png",
+    adv3: "/images/adv3.png",
+    s1: "/images/s1.png",
+    s2: "/images/s2.png",
+    s3: "/images/s3.png",
+    s4: "/images/s4.png",
 }
 export default PngIcons;

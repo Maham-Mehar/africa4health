@@ -62,7 +62,7 @@ const Initiatives = () => {
                 alt={`Initiative ${left.id}`}
                 width={500}
                 height={300}
-                className="rounded-lg shadow object-cover w-full"
+                className=" object-cover w-full"
               />
             </div>
           ) : null}
@@ -72,9 +72,9 @@ const Initiatives = () => {
             <div className="pt-10">
               <p
                 className={`text-xl pb-3 font-semibold border-b-2 border-b-[#D9D9D9] ${
-                  right.id === 1 || right.id === 5
+                  right.id === 4 || right.id === 8
                     ? "text-[#621843]"
-                    : right.id === 4 || right.id === 8
+                    : right.id === 1 || right.id === 5
                     ? "text-[#FE9430]"
                     : "text-[#7F3D84]"
                 }`}
@@ -103,7 +103,7 @@ const Initiatives = () => {
                 alt={`Initiative ${right.id}`}
                 width={500}
                 height={300}
-                className="rounded-lg shadow object-cover w-full"
+                className=" object-cover w-full"
               />
             </div>
           ) : null}

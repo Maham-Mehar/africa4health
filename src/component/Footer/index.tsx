@@ -16,11 +16,11 @@ const footerLinks: FooterLinkSection[] = [
   },
   {
     title: "Initiatives",
-    links: ["Healthcare Access", "Education", "Community Programs", "Research"],
+    links: ["Women’s Health","Men’s Health","Children’s  Health"],
   },
   {
     title: "Get Involved",
-    links: ["Donate", "Volunteer", "Careers", "Contact Us"],
+    links: ["Donate",  "Contact Us"],
   },
 ];
 

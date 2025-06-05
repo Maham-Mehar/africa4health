@@ -27,13 +27,13 @@ const Cards = () => {
             {/* Overlay with clickable text1 and conditional description */}
             <div className="absolute bottom-0 left-0 w-full bg-[rgba(255,255,255,0.05)] backdrop-blur-md py-2 px-4 text-white cursor-pointer">
               <p
-                className="text-[28px] font-bold"
+                className="text-[24px] font-bold"
                 onClick={() => handleClick(item.id)}
               >
                 {item.text1}
               </p>
               {activeCardId === item.id && (
-                <p className="text-[22px] font-normal mt-1">{item.desctription}</p>
+                <p className="text-2xl font-normal mt-1">{item.desctription}</p>
               )}
             </div>
           </div>
