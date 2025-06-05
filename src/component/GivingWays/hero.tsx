@@ -1,5 +1,5 @@
 import HeroSection from "@/common/Herosec";
-const InitSection = () => {
+const WaysSection = () => {
     return (
         <HeroSection
             title="Ways to Give"
@@ -9,4 +9,4 @@ const InitSection = () => {
     );
 };
 
-export default InitSection;
+export default WaysSection;
