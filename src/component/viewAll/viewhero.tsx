@@ -6,7 +6,7 @@ const NewsUpdates = () => {
     <section className="bg-white py-16 px-6 md:px-12">
       {/* Header */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-[#621843]">News & Updates</h2>
+        <h2 className="text-3xl md:text-4xl font-extrabold text-[#621843]">News <span className="text-[#F37021]">& </span> Updates</h2>
         <p className="text-[#1A1A1A] mt-2 text-xl font-medium py-2">
           Stay Informed: Latest News and Updates on Our Impact Across Africa
         </p>

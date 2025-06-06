@@ -4,11 +4,11 @@ import PngIcons from "@/Icons/pngIcons";
 import Link from "next/link";
 const Updates = () => {
     return (
-        <section className="pb-16  bg-white pb-12 ">
+        <section className="pb-5  bg-white ">
             <div className="max-w-7xl mx-auto px-6 py-10">
                 {/* Heading Section */}
                 <div className="mb-12 text-center">
-                    <h2 className="text-3xl md:text-[32px] font-bold text-[#621843] mb-4">News and Updates</h2>
+                    <h2 className="text-3xl md:text-[32px] font-bold text-[#621843] mb-4">News <span className="">&</span> Updates</h2>
                   
                 </div>
 
