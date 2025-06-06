@@ -9,9 +9,7 @@ const Updates = () => {
                 {/* Heading Section */}
                 <div className="mb-12 text-center">
                     <h2 className="text-3xl md:text-[32px] font-bold text-[#621843] mb-4">News and Updates</h2>
-                    <p className="text-xl font-medium text-gray-700 max-w-3xl mx-auto">
-                        Stay informed about our latest initiatives, success stories, and the impact we're making across Africa.
-                    </p>
+                  
                 </div>
 
                 {/* Updates List */}

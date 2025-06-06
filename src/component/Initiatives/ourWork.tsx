@@ -7,6 +7,7 @@ const OurWork = () => {
             titleText=" Your support helps us continue these vital healthcare initiatives and expand our reach to more communities in need across Africa."
             text="Your support helps us continue these vital healthcare initiatives and expand our reach to more communities in need across Africa."
             buttonText="Make a Donation"
+            buttonText2="Partner With Us"
         />
         </div>
     );

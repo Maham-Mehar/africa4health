@@ -1,3 +1,4 @@
+
 var PngIcons = {
     // Home Page
     logo: "/images/Logo.png",
@@ -55,5 +56,15 @@ var PngIcons = {
     s2: "/images/s2.png",
     s3: "/images/s3.png",
     s4: "/images/s4.png",
+
+    // Contact Us
+    Contact: "/images/contact1.png",
+    contact1: "/images/contact2.png",
+
+// Donation
+donate: "/images/donate.png",
+
+// Viewall
+viewall: "/images/viewall.png",
 }
 export default PngIcons;
