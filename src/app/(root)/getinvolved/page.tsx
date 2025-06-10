@@ -3,7 +3,7 @@ import ParticipentData from "@/component/getInvolved/participent";
 import Advocate from "@/component/getInvolved/advocate";
 import SliderSection from "@/component/getInvolved/slider";
 
-const getinvolved =()=>{
+const Getinvolved =()=>{
     return(
         <>
         <GetInvolved />
@@ -13,4 +13,4 @@ const getinvolved =()=>{
         </>
     )
 }
-export default getinvolved;
+export default Getinvolved;
