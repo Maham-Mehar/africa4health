@@ -11,7 +11,7 @@ const Cards = () => {
   };
 
   return (
-    <div className="max-w-[83rem] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6 mt-7">
+    <div className="max-w-[83rem] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6 mt-[60px]">
       {CardData.map((item) => (
         <div key={item.id} className="overflow-hidden">
           {/* Image section with overlayed text1 (clickable) */}

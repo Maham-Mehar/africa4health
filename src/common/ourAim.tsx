@@ -12,7 +12,6 @@ function JoinUs(props: aboutData) {
     return (
         <div className="py-15">
             <div className="text-center mb-12">
-                {/* ✅ Conditionally Render Title */}
                 {props.title && (
                     <h2 className="text-3xl md:text-[32px] font-bold text-[#621843] mb-4">
                         {props.title}

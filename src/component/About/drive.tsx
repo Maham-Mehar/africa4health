@@ -1,5 +1,6 @@
+import PngIcons from "@/Icons/pngIcons";
 import React from "react";
-
+import Image from "next/image";
 const DrivesUs = () => {
     type FooterLinkSection = {
         heading: string;
@@ -20,13 +21,14 @@ const DrivesUs = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Column 1 - Heading only */}
                 <div className="">
-                    <p className="text-2xl text-[32px] font-bold text-[#621843]">{content.heading}</p>
+                    <p className="text-2xl text-[32px] font-bold text-[#621843] mb-5">{content.heading}</p>
+                    <Image src={PngIcons.about1} alt="about" width={600} height={420}/>
                 </div>
 
                 {/* Column 2 - Text 1 and Text 2 */}
-                <div className=" flex flex-col justify-end items-end">
-                    <p className="mb-4 text-2xl max-w-lg font-medium">{content.text1}</p>
-                    <p className="text-2xl max-w-lg font-medium ">{content.text2}</p>
+                <div className=" flex flex-col justify-end items-center pb-10 border-b-2 border-b-[#999999]">
+                    <p className="mb-4 text-[24px] max-w-lg font-medium">{content.text1}</p>
+                    <p className="text-[24px] max-w-lg font-medium ">{content.text2}</p>
                 </div>
             </div>
         </div>

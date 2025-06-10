@@ -23,7 +23,7 @@ const Initiatives = () => {
               <img src={PngIcons.image2} alt="" />
             </div>
     <section className="relative max-w-6xl mx-auto px-4 pt-10 space-y-16">
-        
+          
       {rows.map(([left, right], index) => (
         <div key={index} className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Left Column */}
@@ -31,20 +31,20 @@ const Initiatives = () => {
             <div className="pt-10">
               <p
                 className={`text-xl pb-3 font-semibold border-b-2 border-b-[#D9D9D9] ${
-                  left.id === 1 || left.id === 5
+                  left.id === 4 || left.id === 8
                     ? "text-[#621843]"
-                    : left.id === 4 || left.id === 8
+                    : left.id === 1 || left.id === 5
                     ? "text-[#FE9430]"
-                    : "text-[#7F3D84]"
+                : "text-[#5B123D]"
                 }`}
               >
                 {String(contentIndex++).padStart(2, "0")}
               </p>
               <h3
                 className={`text-2xl md:text-3xl font-bold mt-2 ${
-                  left.id === 1 || left.id === 5
+                  left.id === 4 || left.id === 8
                     ? "text-[#621843]"
-                    : left.id === 4 || left.id === 8
+                    : left.id === 1 || left.id === 5
                     ? "text-[#FE9430]"
                     : "text-[#5B123D]"
                 }`}
@@ -72,9 +72,9 @@ const Initiatives = () => {
             <div className="pt-10">
               <p
                 className={`text-xl pb-3 font-semibold border-b-2 border-b-[#D9D9D9] ${
-                  right.id === 4 || right.id === 8
+                  right.id === 5 || right.id === 8
                     ? "text-[#621843]"
-                    : right.id === 1 || right.id === 5
+                    : right.id === 1 || right.id === 7
                     ? "text-[#FE9430]"
                     : "text-[#7F3D84]"
                 }`}
@@ -83,9 +83,9 @@ const Initiatives = () => {
               </p>
               <h3
                 className={`text-2xl md:text-3xl font-bold mt-2 ${
-                  right.id === 1 || right.id === 5
+                  right.id === 1 || right.id === 3
                     ? "text-[#621843]"
-                    : right.id === 4 || right.id === 8
+                    : right.id === 7 || right.id === 7
                     ? "text-[#FE9430]"
                     : "text-[#5B123D]"
                 }`}

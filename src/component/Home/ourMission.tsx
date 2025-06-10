@@ -25,7 +25,7 @@ const values: ValueItem[] = [
 
 const OurMission = () => {
   return (
-    <section className="relative py-20 overflow-hidden">
+    <section className="relative py-20 gap-8 overflow-hidden">
       {/* Decorative Image at the Bottom Right */}
       <div className="absolute bottom-0 right-0 z-0">
         <img src={PngIcons.missionimg} alt="Decorative" className="w-auto h-auto" />
@@ -38,13 +38,13 @@ const OurMission = () => {
           <h2 className="text-3xl md:text-[32px] font-bold text-[#621843] mb-4">
             How we Plan to Change the Future
           </h2>
-          <p className="text-xl font-medium max-w-3xl mx-auto text-gray-700">
+          <p className="text-2xl font-medium max-w-4xl mx-auto text-gray-700">
             Africa for Health is committed to transforming healthcare outcomes across the continent. Through strategic partnerships, community engagement, and evidence-based interventions, we're working to create sustainable change in healthcare delivery and access.
           </p>
         </div>
 
         {/* Content Grid */}
-        <div className="grid md:grid-cols-2 gap-10 items-center">
+        <div className="grid md:grid-cols-2 gap-14 items-center">
           {/* Image */}
           <Image
             src={PngIcons.mission}
@@ -67,10 +67,10 @@ const OurMission = () => {
                 >
                   <FaCheckCircle className="text-[#F9B233] mt-1 flex-shrink-0" />
                   <div>
-                    <p className="font-bold text-[19px] text-[#621843]">
+                    <p className="font-bold text-[22px] text-[#621843]">
                       {value.title}
                     </p>
-                    <p className="text-gray-700 text-[19px] font-normal">
+                    <p className="text-gray-700 text-[20px] font-normal">
                       {value.description}
                     </p>
                   </div>

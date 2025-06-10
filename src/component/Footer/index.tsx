@@ -2,25 +2,39 @@ import { SlSocialFacebook } from "react-icons/sl";
 import { IoLogoInstagram, IoIosSend } from "react-icons/io";
 import type { FC } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import PngIcons from "@/Icons/pngIcons";
 
 type FooterLinkSection = {
   title: string;
-  links: string[];
+  links: {
+    label: string;
+    href: string;
+  }[];
 };
 
 const footerLinks: FooterLinkSection[] = [
   {
     title: "About",
-    links: [ "Partners", "Impact"],
+    links: [
+      { label: "Partners", href: "/contact" },
+      { label: "Impact", href: "/about" },
+    ],
   },
   {
     title: "Initiatives",
-    links: ["Women’s Health","Men’s Health","Children’s  Health"],
+    links: [
+      { label: "Women’s Health", href: "/womenscare" },
+      { label: "Men’s Health", href: "/menhealth" },
+      { label: "Children’s  Health", href: "/childscare" },
+    ],
   },
   {
     title: "Get Involved",
-    links: ["Donate",  "Contact Us"],
+    links: [
+      { label: "Donate", href: "/donate" },
+      { label: "Contact Us", href: "/contact" },
+    ],
   },
 ];
 
@@ -87,7 +101,7 @@ const Footer: FC = () => {
                 <ul className="text-gray-200 text-sm font-medium space-y-1">
                   {section.links.map((link, i) => (
                     <li key={i} className="cursor-pointer py-[7px] hover:underline">
-                      {link}
+                      <Link href={link.href}>{link.label}</Link>
                     </li>
                   ))}
                 </ul>
@@ -97,12 +111,11 @@ const Footer: FC = () => {
         </div>
       </div>
 
-        <footer className="w-full max-w-7xl flex justify-center mx-auto py-6 mt-4 border-t-2 border-[#A47F94] py-3 text-xs text-gray-400 flex flex-col sm:flex-row justify-between items-center sm:items-end gap-2 sm:gap-0">
-          <p className="text-center font-medium text-sm text-gray-100 sm:text-left">© 2025 Africa for Health. All rights reserved.</p>
-          
-        </footer>
-  
-
+      <footer className="w-full max-w-7xl flex justify-center mx-auto py-6 mt-4 border-t-2 border-[#A47F94] py-3 text-xs text-gray-400 flex flex-col sm:flex-row justify-between items-center sm:items-end gap-2 sm:gap-0">
+        <p className="text-center font-medium text-sm text-gray-100 sm:text-left">
+          © 2025 Africa for Health. All rights reserved.
+        </p>
+      </footer>
     </div>
   );
 };

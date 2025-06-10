@@ -9,7 +9,6 @@ const Updates = () => {
                 {/* Heading Section */}
                 <div className="mb-12 text-center">
                     <h2 className="text-3xl md:text-[32px] font-bold text-[#621843] mb-4">News <span className="">&</span> Updates</h2>
-                  
                 </div>
 
                 {/* Updates List */}
@@ -32,14 +31,6 @@ const Updates = () => {
                         </div>
                     ))}
                 </div>
-                <Link href="/viewall">
-
-                <div className="flex justify-center mt-5">
-                    <button className="bg-[#621843] text-white text-lg font-bold px-9 py-2 rounded-full hover:bg-[#72122f] transition">
-                        View All News
-                    </button>
-                </div>
-                </Link>
             </div>
         </section>
     );

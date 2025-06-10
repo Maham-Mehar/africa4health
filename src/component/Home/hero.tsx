@@ -56,17 +56,19 @@ const Hero = () => {
           <p className="text-[32px] font-extrabold text-[#621843] text-center"> 350+ <span className="text-white">villages</span></p>
           <p className="text-[24px] font-semi-bold text-white max-w-2xs text-center">Supported with essential resources and services</p>
         </div>
-      
+
         <div>
-           <p className="text-[32px] font-extrabold text-[#621843]">210+ <span className="text-white">medical camps</span></p>
-         <p className="text-[24px] font-semi-bold text-white max-w-2xs text-center">Conducted in underserved regions</p>
+          <p className="text-[32px] font-extrabold text-[#621843]">210+ <span className="text-white">medical camps</span></p>
+          <p className="text-[24px] font-semi-bold text-white max-w-2xs text-center">Conducted in underserved regions</p>
         </div>
       </div>
-      
+
       <div className="absolute bottom-12 z-20 left-130 bg-[#621843] text-center px-6 py-4">
-           <p className="text-[32px] font-extrabold text-[#FE9430]">95K+ <span className="text-white">patients treated</span></p>
-          <p className="text-[24px] font-semi-bold text-white max-w-2xs text-center">Through mobile clinics and partner hospitals</p>
-        </div>
+        <p className="text-[32px] font-extrabold text-[#FE9430]">95K+ <span className="text-white">patients treated</span></p>
+        <p className="text-[24px] font-semibold text-white text-center max-w-xs mx-auto">
+          Through mobile clinics and partner hospitals
+        </p>
+      </div>
     </div>
   );
 };

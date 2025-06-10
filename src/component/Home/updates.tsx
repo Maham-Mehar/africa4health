@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { updatedData } from "@/Data/updates"; // Adjust path if needed
+import { updatedData } from "@/Data/updates"; 
 import PngIcons from "@/Icons/pngIcons";
 import Link from "next/link";
 const Updates = () => {
@@ -26,9 +26,11 @@ const Updates = () => {
                             />
                             <p className="mt-2 text-gray-800 text-base font-normal">
                                 {item.text2.split(item.text3)[0]}
+                            <Link href="/education">
                                 <span className="text-[#C6C6C6] font-semibold  cursor-pointer hover:underline">
                                     {item.text3}
                                 </span>
+                                </Link>
                             </p>
                             <p className="text-sm text-gray-500 mt-2">{item.text4}</p>
                         </div>

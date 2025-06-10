@@ -17,8 +17,8 @@ const NewsUpdates = () => {
             <button
               key={index}
               className={`pb-1 ${tab.active
-                  ? "text-[#621843] border-b-2 border-[#621843]"
-                  : "text-gray-500"
+                ? "text-[#621843] border-b-2 border-[#621843]"
+                : "text-gray-500"
                 }`}
             >
               {tab.label}
@@ -58,18 +58,18 @@ const NewsUpdates = () => {
         </div>
 
         {/* Image Column */}
-{/* Image Column */}
-<div className="md:col-span-5">
-  <div className="overflow-hidden flex justify-end w-full">
-    <Image
-      src={PngIcons.viewall}
-      alt={newsCard.alt}
-      width={700} // increased from 600
-      height={550} // increased from 500
-      className="object-cover w-full h-auto rounded-lg"
-    />
-  </div>
-</div>
+        {/* Image Column */}
+        <div className="md:col-span-5">
+          <div className="overflow-hidden flex justify-end w-full">
+            <Image
+              src={PngIcons.viewall}
+              alt={newsCard.alt}
+              width={700} // increased from 600
+              height={550} // increased from 500
+              className="object-cover w-full h-auto rounded-lg"
+            />
+          </div>
+        </div>
 
       </div>
     </section>
