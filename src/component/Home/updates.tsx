@@ -1,13 +1,13 @@
-import Image from "next/image";
+// pages/index.tsx
+import Updates from "@/common/titlecards";
+import { cardData } from "@/Data/updates";
 import Link from "next/link";
-import { updatedData } from "@/Data/updates";
-import PngIcons from "@/Icons/pngIcons";
 
-const Updates = () => {
+export default function Home() {
   return (
-    <section className="bg-white pb-16">
+    <main>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-0 md:py-6 lg:py-10">
-        {/* Heading Section */}
+        {/* other sections... */}
         <div className="mb-10 text-center">
           <h2 className="text-2xl sm:text-3xl md:text-[32px] font-bold text-[#621843] mb-4">
             News and Updates
@@ -17,30 +17,7 @@ const Updates = () => {
           </p>
         </div>
 
-        {/* Updates List */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 lg:gap-2">
-          {updatedData.map((item) => (
-            <div key={item.id} className="p-2 lg:p-3 xl:p-4 transition duration-300">
-              <div className="w-full h-60 relative rounded-md overflow-hidden">
-                <Image
-                  src={item.image}
-                  alt={item.text1}
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-              <p className="mt-3 text-gray-800 md:text-base font-normal">
-                {item.text2.split(item.text3)[0]}
-                <Link href="/education">
-                  <span className="text-[#C6C6C6] font-semibold hover:underline cursor-pointer">
-                    {item.text3}
-                  </span>
-                </Link>
-              </p>
-              <p className="text-sm text-gray-500 mt-2">{item.text4}</p>
-            </div>
-          ))}
-        </div>
+        <Updates cardData={cardData} />
 
         {/* Button */}
         <div className="flex justify-center mt-8">
@@ -50,9 +27,9 @@ const Updates = () => {
             </button>
           </Link>
         </div>
-      </div>
-    </section>
-  );
-};
 
-export default Updates;
+      </div>
+      {/* other sections... */}
+    </main>
+  );
+}

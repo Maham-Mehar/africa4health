@@ -1,5 +1,5 @@
 import OurCommunity from "@/component/ContactUs/ourCommunity";
-import Updates from "@/component/cards/cards";
+import Updates from "@/component/educationCards/cards";
 import { Fragment } from "react";
 const Education = () => {
     return (

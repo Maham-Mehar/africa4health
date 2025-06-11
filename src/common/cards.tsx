@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-
 // Type definition for each item
 type ParticipantItem = {
   id: number;
