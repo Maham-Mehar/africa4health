@@ -16,7 +16,7 @@ const ViewAll = () => {
 
     return (
         <Fragment>
-             <div className="max-w-7xl mx-auto px-4 sm:px-6 py-0 md:py-6 lg:py-10">
+             <div className="max-w-7xl mx-auto ">
 
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-extrabold text-[#621843]">News <span className="text-[#F37021]">& </span> Updates</h2>

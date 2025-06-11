@@ -9,13 +9,8 @@ interface NewsDetailPageProps {
     id: string;
   };
 }
-
 export default async function NewsDetail({ params }: NewsDetailPageProps) {
   const { id } = params;
-
-  // Optional: Fetch data here
-  // const post = await fetch(...).then(res => res.json());
-
   return (
     <Fragment>
       <NewsUpdates id={id} />
@@ -25,7 +20,6 @@ export default async function NewsDetail({ params }: NewsDetailPageProps) {
             Other News
           </h2>
         </div>
-
         <Updates cardData={cardData} />
       </div>
       <OurCommunity />

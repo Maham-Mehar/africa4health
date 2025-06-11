@@ -1,6 +1,7 @@
 import PngIcons from "@/Icons/pngIcons";
 import React from "react";
 import Image from "next/image";
+
 const DrivesUs = () => {
     type FooterLinkSection = {
         heading: string;
@@ -17,18 +18,30 @@ const DrivesUs = () => {
     };
 
     return (
-        <div className="max-w-7xl mx-auto py-15">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {/* Column 1 - Heading only */}
-                <div className="">
-                    <p className="text-2xl text-[32px] font-bold text-[#621843] mb-5">{content.heading}</p>
-                    <Image src={PngIcons.about1} alt="about" width={600} height={420}/>
+        <div className="max-w-7xl mx-auto py-12 px-4 md:px-4 lg:px-6 xl:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                {/* Column 1 - Heading and Image */}
+                <div>
+                    <h2 className="text-3xl sm:text-4xl font-bold text-[#621843] mb-6">
+                        {content.heading}
+                    </h2>
+                    <Image
+                        src={PngIcons.about1}
+                        alt="about"
+                        width={600}
+                        height={420}
+                        className="w-full h-auto rounded-xl"
+                    />
                 </div>
 
-                {/* Column 2 - Text 1 and Text 2 */}
-                <div className=" flex flex-col justify-end items-center pb-10 border-b-2 border-b-[#999999]">
-                    <p className="mb-4 text-[24px] max-w-lg font-medium">{content.text1}</p>
-                    <p className="text-[24px] max-w-lg font-medium ">{content.text2}</p>
+                {/* Column 2 - Text Content */}
+                <div className="flex flex-col justify-center border-b-2 border-[#999999] pb-8">
+                    <p className="text-base sm:text-lg md:text-lg lg:text-xl text-gray-800 mb-6 max-w-xl">
+                        {content.text1}
+                    </p>
+                    <p className="text-base sm:text-lg md:text-lg lg:text-xl text-gray-800 max-w-xl">
+                        {content.text2}
+                    </p>
                 </div>
             </div>
         </div>

@@ -15,41 +15,44 @@ const Initiatives = () => {
   let contentIndex = 1;
 
   return (
-    <div className="relative">
-      <div className="absolute top-0 left-0">
-        <img src={PngIcons.image1} alt="" />
+    <div className="relative bg-white overflow-hidden">
+      {/* Background icons */}
+      <div className="absolute top-0 left-0 z-0">
+        <img src={PngIcons.image1} alt="" className="w-32 sm:w-40 md:w-48" />
       </div>
-      <div className="absolute bottom-0 right-0">
-        <img src={PngIcons.image2} alt="" />
+      <div className="absolute bottom-0 right-0 z-0">
+        <img src={PngIcons.image2} alt="" className="w-32 sm:w-40 md:w-48" />
       </div>
-      <section className="relative max-w-6xl mx-auto px-4 pt-10 space-y-16">
 
+      <section className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-16">
         {rows.map(([left, right], index) => (
           <div key={index} className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {/* Left Column */}
             {left?.title ? (
-              <div className="pt-10">
+              <div className="pt-4">
                 <p
-                  className={`text-xl pb-3 font-semibold border-b-2 border-b-[#D9D9D9] ${left.id === 4 || left.id === 8
+                  className={`text-lg md:text-xl pb-2 font-semibold border-b-2 border-b-[#D9D9D9] ${
+                    left.id === 4 || left.id === 8
                       ? "text-[#621843]"
                       : left.id === 1 || left.id === 5
-                        ? "text-[#FE9430]"
-                        : "text-[#5B123D]"
-                    }`}
+                      ? "text-[#FE9430]"
+                      : "text-[#5B123D]"
+                  }`}
                 >
                   {String(contentIndex++).padStart(2, "0")}
                 </p>
                 <h3
-                  className={`text-2xl md:text-3xl font-bold mt-2 ${left.id === 4 || left.id === 8
+                  className={`text-2xl md:text-3xl font-bold mt-2 ${
+                    left.id === 4 || left.id === 8
                       ? "text-[#621843]"
                       : left.id === 1 || left.id === 5
-                        ? "text-[#FE9430]"
-                        : "text-[#5B123D]"
-                    }`}
+                      ? "text-[#FE9430]"
+                      : "text-[#5B123D]"
+                  }`}
                 >
                   {left.title}
                 </h3>
-                <p className="text-gray-700 mt-4 max-w-lg text-base">
+                <p className="text-gray-700 mt-4 max-w-lg text-base md:text-lg">
                   {left.description}
                 </p>
               </div>
@@ -58,37 +61,39 @@ const Initiatives = () => {
                 <Image
                   src={left.image}
                   alt={`Initiative ${left.id}`}
-                  width={500}
-                  height={300}
-                  className=" object-cover w-full"
+                  width={600}
+                  height={400}
+                  className="object-cover w-full rounded-lg"
                 />
               </div>
             ) : null}
 
             {/* Right Column */}
             {right?.title ? (
-              <div className="pt-10">
+              <div className="pt-4">
                 <p
-                  className={`text-xl pb-3 font-semibold border-b-2 border-b-[#D9D9D9] ${right.id === 5 || right.id === 8
+                  className={`text-lg md:text-xl pb-2 font-semibold border-b-2 border-b-[#D9D9D9] ${
+                    right.id === 5 || right.id === 8
                       ? "text-[#621843]"
                       : right.id === 1 || right.id === 7
-                        ? "text-[#FE9430]"
-                        : "text-[#7F3D84]"
-                    }`}
+                      ? "text-[#FE9430]"
+                      : "text-[#7F3D84]"
+                  }`}
                 >
                   {String(contentIndex++).padStart(2, "0")}
                 </p>
                 <h3
-                  className={`text-2xl md:text-3xl font-bold mt-2 ${right.id === 1 || right.id === 3
+                  className={`text-2xl md:text-3xl font-bold mt-2 ${
+                    right.id === 1 || right.id === 3
                       ? "text-[#621843]"
-                      : right.id === 7 || right.id === 7
-                        ? "text-[#FE9430]"
-                        : "text-[#5B123D]"
-                    }`}
+                      : right.id === 7
+                      ? "text-[#FE9430]"
+                      : "text-[#5B123D]"
+                  }`}
                 >
                   {right.title}
                 </h3>
-                <p className="text-gray-700 mt-4 max-w-lg text-base">
+                <p className="text-gray-700 mt-4 max-w-lg text-base md:text-lg">
                   {right.description}
                 </p>
               </div>
@@ -97,9 +102,9 @@ const Initiatives = () => {
                 <Image
                   src={right.image}
                   alt={`Initiative ${right.id}`}
-                  width={500}
-                  height={300}
-                  className=" object-cover w-full"
+                  width={600}
+                  height={400}
+                  className="object-cover w-full rounded-lg"
                 />
               </div>
             ) : null}

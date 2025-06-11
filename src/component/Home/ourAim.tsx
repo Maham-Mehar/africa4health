@@ -4,7 +4,7 @@ const OurAim = () => {
     return (
         <section className="pt-10 lg:pt-13 xl:pt-16 bg-white">
             <div className="max-w-7xl mx-auto xl:px-0 lg:px-6 px-4">
-                <div className="space-y-0 md:space-y-6">
+                <div className="">
                     {ourAimData.map((item) => {
                         const isPurple = item.id === 1 || item.id === 3 || item.id === 5;
                         const textColor = isPurple ? "text-[#621843]" : "text-[#FE9430]";
@@ -26,7 +26,7 @@ const OurAim = () => {
                                 </div>
 
                                 {/* Right Content */}
-                                <div className="md:w-2/3">
+                                <div className="md:w-2/3 flex items-center">
                                     <p className="text-gray-700 mt-0 md:mt-2 text-[19px] md:text-[22px] lg:text-[23px] xl:text-[28px] font-medium leading-[1.5]">
                                         {item.text2}
                                     </p>

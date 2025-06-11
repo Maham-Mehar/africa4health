@@ -44,33 +44,33 @@ const Footer: FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-y-10 md:gap-x-12">
           {/* Left Section */}
-       <div className="md:col-span-7 flex flex-col items-start">
-  {/* Responsive Logo */}
-  <Image
-    src={PngIcons.footerlogo}
-    alt="Africa For Health Logo"
-    width={228}
-    height={140}
-    className="mb-4 w-[180px] sm:w-[220px] md:w-[260px] h-auto"
-  />
+          <div className="md:col-span-7 flex flex-col items-start">
+            {/* Responsive Logo */}
+            <Image
+              src={PngIcons.footerlogo}
+              alt="Africa For Health Logo"
+              width={228}
+              height={140}
+              className="mb-4 w-[180px] sm:w-[220px] md:w-[260px] h-auto"
+            />
 
-  {/* Responsive Text */}
-  <p className="text-white text-base sm:text-lg md:text-xl lg:text-2xl font-extrabold mt-4 sm:mt-6 max-w-xs sm:max-w-sm">
-    Improving Health Outcomes Across Africa
-  </p>
+            {/* Responsive Text */}
+            <p className="text-white text-base sm:text-lg md:text-xl lg:text-2xl font-extrabold mt-4 sm:mt-6 max-w-xs sm:max-w-sm">
+              Improving Health Outcomes Across Africa
+            </p>
 
-  {/* Responsive Social Icons */}
-  <div className="flex gap-4 mt-5 sm:mt-6">
-    <SlSocialFacebook
-      className="text-white text-[24px] sm:text-[30px] md:text-[34px] cursor-pointer hover:text-[#F68E3F] transition"
-      aria-label="Facebook"
-    />
-    <IoLogoInstagram
-      className="text-white text-[28px] sm:text-[36px] md:text-[40px] cursor-pointer hover:text-[#F68E3F] transition"
-      aria-label="Instagram"
-    />
-  </div>
-</div>
+            {/* Responsive Social Icons */}
+            <div className="flex gap-4 mt-5 sm:mt-6">
+              <SlSocialFacebook
+                className="text-white text-[24px] sm:text-[30px] md:text-[34px] cursor-pointer hover:text-[#F68E3F] transition"
+                aria-label="Facebook"
+              />
+              <IoLogoInstagram
+                className="text-white text-[28px] sm:text-[36px] md:text-[40px] cursor-pointer hover:text-[#F68E3F] transition"
+                aria-label="Instagram"
+              />
+            </div>
+          </div>
 
 
           {/* Right Section */}
@@ -116,7 +116,7 @@ const Footer: FC = () => {
         </div>
 
         {/* Bottom Footer */}
-        <footer className="border-t border-[#A47F94] mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center text-center text-sm text-gray-300 gap-2 sm:gap-0">
+        <footer className="border-t border-[#A47F94] mt-10 pt-6 flex flex-col sm:flex-row justify-center items-center text-center text-sm text-gray-300 gap-2 sm:gap-0">
           <p>© 2025 Africa for Health. All rights reserved.</p>
         </footer>
       </div>

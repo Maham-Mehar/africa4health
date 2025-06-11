@@ -49,7 +49,7 @@ function JoinUs(props: AboutData) {
                     </Link>
                     {props.buttonText2 && (
                         <Link href="/donate">
-                            <button className="text-[15px] sm:text-lg font-semibold border-2 border-white bg-transparent text-white px-6 sm:px-8 py-3 rounded-full hover:bg-white hover:text-black transition">
+                            <button className="text-[15px] sm:text-lg font-semibold border-2 border-white bg-transparent text-white px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-full hover:bg-white hover:text-black transition">
                                 {props.buttonText2}
                             </button>
                         </Link>

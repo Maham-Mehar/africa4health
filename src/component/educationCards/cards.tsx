@@ -1,6 +1,5 @@
 // pages/index.tsx
 import Updates from "@/common/titlecards";
-import { updatedData } from "@/Data/updates";
 import { ViewedData } from "@/Data/viewall";
 
 export default function Home() {
@@ -8,7 +7,7 @@ export default function Home() {
     <main>
       {/* other sections... */}
 
-      <Updates data={ViewedData} />
+      {/* <Updates data={ViewedData} /> */}
 
       {/* other sections... */}
     </main>
