@@ -33,7 +33,7 @@ const FAQS = () => {
         <p className="max-w-xl text-2xl font-medium mx-auto mb-8">
           Our team is here to help. Contact us to learn more about ways to give or to discuss your giving options.
         </p>
-        <button className="bg-[#f97316] hover:bg-orange-600 transition duration-200 py-2 px-6 rounded-full text-[24px] font-semibold">
+        <button className="bg-[#f97316] hover:bg-orange-600 transition duration-200 py-1 md:py-2 px-6 rounded-full text-[20px] md:text-[24px] font-semibold">
           Contact Us
         </button>
       </div>

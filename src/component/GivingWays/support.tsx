@@ -27,12 +27,12 @@ const SupportSection = () => {
   const rotations = ["rotate-[-4deg]", "rotate-[2deg]", "rotate-[0deg]"];
 
   return (
-    <section className="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center my-14">
+    <section className="max-w-6xl mx-auto px-4 pt-8 pb-0 md:pb-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-0 md:mb-14 mt-14">
       {/* Stack container with background applied once */}
-      <div className="relative w-full h-[400px]">
+      <div className="relative w-full h-[400px] md:h-[500px]">
         {/* Background covering left half only */}
         <div
-          className="absolute top-[-45px] left-[-15px] h-[570px] w-[350px]  bg-left bg-no-repeat z-0"
+          className="absolute top-[-45px] left-[-15px] h-[570px] w-[350px] bg-left bg-no-repeat z-0"
           style={{ backgroundImage: "url('/images/waysbg2.png')" }}
         />
 
@@ -47,15 +47,14 @@ const SupportSection = () => {
               alt={`Support image ${index + 1}`}
               width={504}
               height={300}
-              className="object-cover w-[480px] h-[470px] rounded-lg"
+              className="object-cover w-[450px] h-[450px] md:w-[500px] md:h-[500px] rounded-lg"
             />
           </div>
         ))}
       </div>
 
-
       {/* Text Content */}
-      <div>
+      <div className="text-center md:text-left mt-[140px] md:mt-0">
         <h2 className="text-[#5B123D] text-3xl font-bold mb-4">
           Your Support Makes a Difference
         </h2>

@@ -45,7 +45,7 @@ const DonateSection = () => {
           <div>
             <div className="border-l-4 border-l-[#FE9430] ">
 
-              <h2 className="text-[48px] font-extrabold text-[#621843] ps-3">D<span className="text-[#FE9430]">o</span>nate N<span className="text-[#FE9430]">o</span>w</h2>
+              <h2 className="text-[40px] md:text-[40px] lg:text-[48px] font-extrabold text-[#621843] ps-3">D<span className="text-[#FE9430]">o</span>nate N<span className="text-[#FE9430]">o</span>w</h2>
 
               <p className="text-gray-600 text-[22px] mb-6 font-semibold ps-3">MAKE A DIFFERENCE TODAY</p>
             </div>

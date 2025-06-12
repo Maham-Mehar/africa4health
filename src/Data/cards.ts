@@ -6,7 +6,7 @@ export interface cardsData {
     text2: string;
     text3: string;
     text4: string;
-    desctription: string;
+    description: string;
 }
 export const CardData: cardsData[] = [
     {
@@ -16,7 +16,7 @@ export const CardData: cardsData[] = [
         text2: "Upcoming Events",
         text3: "Host an Event",
         text4: "Event Sponsorship",
-        desctription:"Participate in or host fundraising events to support our healthcare initiatives across Africa.",
+        description:"Participate in or host fundraising events to support our healthcare initiatives across Africa.",
     },
     {
         id: 2,
@@ -25,7 +25,7 @@ export const CardData: cardsData[] = [
         text2: "Volunteer Opportunities ",
         text3: "Skills-Based Volunteering",
         text4: "Volunteer Application",
-        desctription:"Donate your time and skills to help us expand our reach and impact in African communities.",
+        description:"Donate your time and skills to help us expand our reach and impact in African communities.",
     },
     {
 
@@ -35,7 +35,7 @@ export const CardData: cardsData[] = [
         text2: "Start a Campaign",
         text3: "Fundraising Ideas",
         text4: "Success Stories",
-        desctription:"Start your own fundraising campaign to support specific healthcare programs or general operations."
+        description:"Start your own fundraising campaign to support specific healthcare programs or general operations."
     },
     {
 
@@ -45,7 +45,7 @@ export const CardData: cardsData[] = [
         text2: "One-Time Donation",
         text3: "Monthly Giving",
         text4: "Major Gifts",
-        desctription:"Make a direct donation to immediately support our ongoing healthcare initiatives and programs."
+        description:"Make a direct donation to immediately support our ongoing healthcare initiatives and programs."
     },
         {
 
@@ -55,7 +55,7 @@ export const CardData: cardsData[] = [
         text2: "Online Store",
         text3: "Partner Retailers",
         text4: "Gift Cards",
-        desctription:"Purchase merchandise where proceeds directly benefit our healthcare programs across Africa."
+        description:"Purchase merchandise where proceeds directly benefit our healthcare programs across Africa."
     },
         {
 
@@ -65,7 +65,7 @@ export const CardData: cardsData[] = [
         text2: "Corporate Partnerships",
         text3: "Matching Gift Programs",
         text4: "Cause Marketing",
-        desctription:"Partner your business with us through sponsorships, matching gifts, or in-kind donations."
+        description:"Partner your business with us through sponsorships, matching gifts, or in-kind donations."
     },
         {
 
@@ -75,7 +75,7 @@ export const CardData: cardsData[] = [
         text2: "Honor Gifts",
         text3: "Memorial Gifts",
         text4: "Tribute Notifications",
-        desctription:"Make a gift in honor or memory of someone special to create a lasting tribute to their legacy."
+        description:"Make a gift in honor or memory of someone special to create a lasting tribute to their legacy."
     },
     {
 
@@ -85,6 +85,6 @@ export const CardData: cardsData[] = [
         text2: "Planned Giving",
         text3: "Bequests",
         text4: "Charitable Trusts",
-        desctription:"Include Africa for Health in your estate planning to create a lasting impact for generations."
+        description:"Include Africa for Health in your estate planning to create a lasting impact for generations."
     },
 ]

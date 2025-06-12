@@ -8,33 +8,38 @@ type UpdatesProps = {
 
 const Updates = ({ cardData }: UpdatesProps) => {
   return (
-    <section className="bg-white">
-      {/* Update Items */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 lg:gap-2">
+    <section className="bg-white pt-10 px-4 sm:px-6 lg:px-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {cardData.map((item: updateData) => (
           <div
             key={item.id}
-            className="px-0 lg:px-3 xl:px-4 py-2 lg:py-3 xl:py-4 transition duration-300"
+            className="rounded-lg overflow-hidden  hover:shadow-md transition duration-300 bg-white"
           >
-            <div className="w-full h-100 relative rounded-md overflow-hidden">
+            {/* Image */}
+            <div className="relative w-full h-[400px] sm:h-[400px] md:h-[400px]">
               <Image
                 src={item.image}
                 alt={item.title}
-                layout="fill"
-                objectFit="cover"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 300px"
               />
             </div>
-            <p className="mt-3 text-gray-800 md:text-base font-normal">
-              {item.description.length > 70
-                ? item.description.slice(0, 70) + " "
-                : item.description}
-              <Link href={`/newsDetail/${item.id}`}>
-                <span className="text-[#C6C6C6] font-semibold hover:underline cursor-pointer">
-                  - Learn More
-                </span>
-              </Link>
-            </p>
-            <p className="text-sm text-gray-500 mt-2">{item.date}</p>
+
+            {/* Text */}
+            <div className="p-4">
+              <p className="text-gray-800 text-base md:text-lg font-normal">
+                {item.description.length > 70
+                  ? item.description.slice(0, 70) + "..."
+                  : item.description}
+                <Link href={`/newsDetail/${item.id}`}>
+                  <span className="text-[#621843] font-semibold hover:underline ml-1">
+                    Learn More
+                  </span>
+                </Link>
+              </p>
+              <p className="text-sm text-gray-500 mt-2">{item.date}</p>
+            </div>
           </div>
         ))}
       </div>
