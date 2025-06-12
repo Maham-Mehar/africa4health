@@ -1,10 +1,11 @@
+import { Fragment } from "react";
 import NewsUpdates from "@/component/viewAll/viewhero";
 import Updates from "@/common/titlecards";
-import { Fragment } from "react";
 import OurCommunity from "@/component/viewAll/community";
 import { cardData } from "@/Data/updates";
 
-export default async function NewsDetail({ params }: { params: { id: string } }) {
+// Next.js will automatically inject `params` based on the `[id]` segment
+export default function NewsDetail({ params }: { params: { id: string } }) {
   const { id } = params;
 
   return (
