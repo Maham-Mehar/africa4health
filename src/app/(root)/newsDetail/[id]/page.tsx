@@ -4,8 +4,14 @@ import Updates from "@/common/titlecards";
 import OurCommunity from "@/component/viewAll/community";
 import { cardData } from "@/Data/updates";
 
-// Next.js will automatically inject `params` based on the `[id]` segment
-export default function NewsDetail({ params }: { params: { id: string } }) {
+interface PageProps {
+  params: {
+    id: string;
+  };
+}
+
+// ✅ This must NOT return a Promise unless you're using `async`
+export default function NewsDetail({ params }: PageProps) {
   const { id } = params;
 
   return (
