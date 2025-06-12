@@ -11,7 +11,7 @@ interface PageProps {
 }
 
 // ✅ This must NOT return a Promise unless you're using `async`
-export default function NewsDetail({ params }: PageProps) {
+export default async function NewsDetail({ params }: PageProps) {
   const { id } = params;
 
   return (
