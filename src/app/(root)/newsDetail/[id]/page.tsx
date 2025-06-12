@@ -3,17 +3,12 @@ import NewsUpdates from "@/component/viewAll/viewhero";
 import Updates from "@/common/titlecards";
 import OurCommunity from "@/component/viewAll/community";
 import { cardData } from "@/Data/updates";
-
-
-
-// ✅ This must NOT return a Promise unless you're using `async`
-// ✅ Correctly typed function component using Next.js App Router types
-export default function NewsDetail({
-  params,
-}: {
-  params: { id: string };
-}) {
-  const { id } = params;
+import { NewsDetailPageProps } from "./types";
+// Make the component async to handle the Promise-based params
+export default async function Page({ params }: NewsDetailPageProps) {
+  // Await the params Promise to get the actual id
+  const resolvedParams = await params;
+  const { id } = resolvedParams;
   return (
     <Fragment>
       <NewsUpdates id={id} />
