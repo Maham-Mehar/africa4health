@@ -1,4 +1,5 @@
 import { ourAimData } from "@/Data/ouraim";
+import Link from 'next/link';
 
 const OurAim = () => {
     return (
@@ -37,9 +38,11 @@ const OurAim = () => {
 
                     {/* CTA Button */}
                     <div className="text-center mt-8">
-                        <button className="bg-[#FE9430] text-white text-base font-bold px-6 py-3 rounded-full hover:bg-[#72122f] transition">
-                            Learn more about our impact
-                        </button>
+                        <Link href="about">
+                            <button className="bg-[#FE9430] text-white text-base font-bold px-6 py-3 rounded-full hover:bg-[#72122f] transition">
+                                Learn more about our impact
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import PngIcons from "@/Icons/pngIcons";
-
+import Link from 'next/link';
 const stats = [
   {
     value: "350+",
@@ -37,10 +37,11 @@ const Hero = () => {
           Outc<span className="text-[#F37021]">o</span>mes Acr
           <span className="text-[#F37021]">o</span>ss Africa
         </p>
-
+ <Link href="/donate">
         <button className="bg-[#F37021] text-white w-[110px] sm:w-[130px] md:w-[150px] lg:w-[190px] mb-[80px] text-sm sm:text-base md:text-xl lg:text-2xl py-1 lg:py-3 font-semibold rounded-full hover:bg-[#d45f1c] transition">
           Donate Now
         </button>
+        </Link>
       </div>
 
       {/* Cards at the bottom left aligned like Figma */}
