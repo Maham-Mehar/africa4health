@@ -8,11 +8,11 @@ export default function Home() {
     <main>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-5 md:pt-6 lg:pt-10 pb-5 md:pb-10 lg:pb-15">
         {/* other sections... */}
-        <div className="mb-10 text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-[32px] font-bold text-[#621843] mb-4">
+        <div className="mb-10 ">
+          <h2 className="text-2xl sm:text-3xl md:text-[32px] font-bold text-[#621843] mb-4 text-center">
             News and Updates
           </h2>
-          <p className="text-base sm:text-lg md:text-xl font-medium text-gray-700 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl font-medium text-gray-700 max-w-3xl mx-auto text-center">
             Stay informed about our latest initiatives, success stories, and the impact we're making across Africa.
           </p>
           <Updates cardData={cardData} />

@@ -42,7 +42,7 @@ const Footer: FC = () => {
   return (
     <div className="bg-[#621843] pt-10 pb-6 px-3">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-y-10 md:gap-x-12">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-y-4 md:gap-y-10 md:gap-x-12">
           {/* Left Section */}
           <div className="md:col-span-7 flex flex-col items-start">
             {/* Responsive Logo */}
@@ -51,11 +51,11 @@ const Footer: FC = () => {
               alt="Africa For Health Logo"
               width={228}
               height={140}
-              className="mb-4 w-[180px] sm:w-[220px] md:w-[260px] h-auto"
+              className="mb-4 w-[120px] sm:w-[220px] md:w-[260px] h-auto"
             />
 
             {/* Responsive Text */}
-            <p className="text-white text-base sm:text-lg md:text-xl lg:text-2xl font-extrabold mt-4 sm:mt-6 max-w-xs sm:max-w-sm">
+            <p className="text-white text-base sm:text-lg md:text-xl lg:text-2xl font-extrabold mt-2 sm:mt-6 max-w-xs sm:max-w-sm">
               Improving Health Outcomes Across Africa
             </p>
 
