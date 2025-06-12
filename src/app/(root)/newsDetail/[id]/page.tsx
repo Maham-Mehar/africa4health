@@ -4,13 +4,9 @@ import { Fragment } from "react";
 import OurCommunity from "@/component/viewAll/community";
 import { cardData } from "@/Data/updates";
 
-interface NewsDetailPageProps {
-  params: {
-    id: string;
-  };
-}
-export default async function NewsDetail({ params }: NewsDetailPageProps) {
+export default async function NewsDetail({ params }: { params: { id: string } }) {
   const { id } = params;
+
   return (
     <Fragment>
       <NewsUpdates id={id} />

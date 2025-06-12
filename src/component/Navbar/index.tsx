@@ -61,7 +61,7 @@ const Navbar = () => {
                 </Link>
 
                 {/* Center Links (only on desktop) */}
-                <nav className="hidden md:flex justify-center space-x-8 text-[#333]">
+                <nav className="hidden md:flex justify-center md:space-x-5 lg:space-x-7 xl:space-x-8 text-[#333]">
                     {navItems.map(({ label, href }) => (
                         <Link key={href} href={href} className="text-[#621843] text-base font-normal hover:text-[#621843] hover:font-bold">
                             {label}
