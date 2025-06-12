@@ -4,16 +4,16 @@ import Updates from "@/common/titlecards";
 import OurCommunity from "@/component/viewAll/community";
 import { cardData } from "@/Data/updates";
 
-interface PageProps {
-  params: {
-    id: string;
-  };
-}
+
 
 // ✅ This must NOT return a Promise unless you're using `async`
-export default async function NewsDetail({ params }: PageProps) {
+// ✅ Correctly typed function component using Next.js App Router types
+export default function NewsDetail({
+  params,
+}: {
+  params: { id: string };
+}) {
   const { id } = params;
-
   return (
     <Fragment>
       <NewsUpdates id={id} />
