@@ -1,12 +1,12 @@
 "use client";
-import React from "react";
+import React, { Suspense } from "react";
 import Image from "next/image";
 import { healthData, HealthItem } from "@/Data/health";
 import PngIcons from "@/Icons/pngIcons";
 import { useEffect , useState} from "react";
 import { useSearchParams } from "next/navigation";
 
-const Health = () => {
+const HealthWrapper = () => {
   
   const searchParams = useSearchParams();
   const [selectedId, setSelectedId] = useState<number | null>(null);
@@ -71,5 +71,15 @@ const Health = () => {
     </div>
   );
 };
+
+
+const Health = () => {
+
+  return (
+    <Suspense fallback={<p>loading...</p>}>
+      <HealthWrapper/>
+    </Suspense>
+  )
+}
 
 export default Health;
