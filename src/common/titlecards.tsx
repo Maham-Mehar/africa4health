@@ -17,6 +17,9 @@ const Updates = ({ cardData }: UpdatesProps) => {
           >
             {/* Image */}
             <div className="relative w-full h-[400px] sm:h-[400px] md:h-[400px]">
+              <div>
+                <p></p>
+              </div>
               <Image
                 src={item.image}
                 alt={item.title}
@@ -29,8 +32,8 @@ const Updates = ({ cardData }: UpdatesProps) => {
             {/* Text */}
             <div className="p-4">
               <p className="text-gray-800 text-base md:text-lg font-normal">
-                {item.description.length > 70
-                  ? item.description.slice(0, 70) + "..."
+                {item.description.length > 90
+                  ? item.description.slice(0, 90) + "..."
                   : item.description}
                 <Link href={`/newsDetail/${item.id}`}>
                   <span className="text-[#621843] font-semibold hover:underline ml-1">
