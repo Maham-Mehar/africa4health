@@ -15,9 +15,9 @@ const DonateSection = () => {
 
   return (
     <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 px-6 items-stretch">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 lg:gap-8 xl:gap-10 px-4 items-stretch">
         {/* Left Image Column (7/12) */}
-        <div className="md:col-span-7 flex flex-col gap-8">
+        <div className="md:col-span-6 lg:col-span-7 flex flex-col gap-8">
           <div className="relative w-full h-[500px] overflow-hidden rounded">
             <Image
               src={PngIcons.donate}
@@ -29,11 +29,11 @@ const DonateSection = () => {
 
           {/* Impact Text under the image */}
           <div className="text-left px-1">
-            <p className="text-xl font-normal text-gray-700 mb-4">
+            <p className="text-base md:text-[18px] lg:text-[20px] font-normal text-gray-700 mb-4">
               Your impact will help provide essential healthcare services to communities that need them most.
               Your generosity directly impacts the lives of individuals across Africa.
             </p>
-            <p className="text-[20px] font-normal text-gray-600">
+            <p className="text-base md:text-[18px] lg:text-[20px] font-normal text-gray-600">
               From training healthcare workers to building medical facilities and providing life-saving
               treatments, your support enables us to continue our vital work and expand our reach.
             </p>
@@ -41,17 +41,17 @@ const DonateSection = () => {
         </div>
 
         {/* Right Donation Form (5/12) */}
-        <div className="md:col-span-5 relative bg-white rounded-xl shadow-xl p-8 flex flex-col ">
-          <div className="absolute bottom-0 left-0 ">
+        <div className="md:col-span-6 lg:col-span-5 relative bg-white rounded-xl shadow-xl py-8 px-3 md:px-4 lg:px-6 xl:px-8 flex flex-col ">
+          <div className="absolute bottom-0 left-0 hidden md:block ">
             <Image
               src={PngIcons.donate1} 
               alt="Left decorative image"
               width={200}
               height={200}
-              className="object-cover "
+              className="object-cover"
             />
           </div>
-          <div className="absolute bottom-0 right-0">
+          <div className="absolute bottom-0 hidden md:block right-0">
             <Image
               src={PngIcons.donate2} 
               alt="Right decorative image"
@@ -64,16 +64,16 @@ const DonateSection = () => {
           <div>
             <div className="border-l-4 border-l-[#FE9430] ">
 
-              <h2 className="text-[40px] md:text-[40px] lg:text-[48px] font-extrabold text-[#621843] ps-3">
+              <h2 className="text-[34px] md:text-[40px] lg:text-[48px] font-extrabold text-[#621843] ps-3">
                 D<span className="text-[#FE9430]">o</span>nate N<span className="text-[#FE9430]">o</span>w
               </h2>
 
-              <p className="text-gray-600 text-[22px] mb-6 font-semibold ps-3">MAKE A DIFFERENCE TODAY</p>
+              <p className="text-gray-600 text-[18px] md:text-[22px] mb-6 font-semibold ps-3">MAKE A DIFFERENCE TODAY</p>
             </div>
 
             {/* Tabs */}
             <div className="flex gap-6 mb-6 text-center">
-              <button className="text-[#621843] font-bold border-2 px-8 py-2 border-[#621843] bg-[#FAEBF4]">
+              <button className="text-[#621843] font-bold border-2 px-3 md:px-6 lg:px-8 py-2 border-[#621843] bg-[#FAEBF4]">
                 One Time
               </button>
               <button className="text-gray-400 font-medium">Monthly</button>
