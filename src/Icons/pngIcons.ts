@@ -64,7 +64,8 @@ var PngIcons = {
 
 // Donation
 donate: "/images/donate.png",
-
+donate1: "/images/donate1.png",
+donate2: "/images/donate2.png",
 // Viewall
 viewall: "/images/viewall.png",
 }

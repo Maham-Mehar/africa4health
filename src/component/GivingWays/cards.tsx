@@ -29,7 +29,7 @@ const Cards = () => {
                 {/* Hover description */}
                 <p className="text-[24px] font-bold pb-1">{item.text1}</p>
 
-                <p className="text-xl font-medium">{item.description}</p>
+                <p className="text-xl font-medium pt-4 pb-5">{item.description}</p>
               </div>
             </div>
           </div>

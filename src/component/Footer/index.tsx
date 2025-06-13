@@ -1,3 +1,4 @@
+"use client";
 import { SlSocialFacebook } from "react-icons/sl";
 import { IoLogoInstagram, IoIosSend } from "react-icons/io";
 import type { FC } from "react";
@@ -9,7 +10,7 @@ type FooterLinkSection = {
   title: string;
   links: {
     label: string;
-    href: string;
+    href?: string; 
   }[];
 };
 
@@ -24,9 +25,9 @@ const footerLinks: FooterLinkSection[] = [
   {
     title: "Initiatives",
     links: [
-      { label: "Women’s Health", href: "/womenscare" },
-      { label: "Men’s Health", href: "/menhealth" },
-      { label: "Children’s  Health", href: "/childscare" },
+ { label: "Women's Health", href: "/initiatives?id=1" },
+      { label: "Men's Health", href: "/initiatives?id=2" },
+      { label: "Children's Health", href: "/initiatives?id=3" },
     ],
   },
   {
@@ -72,7 +73,6 @@ const Footer: FC = () => {
             </div>
           </div>
 
-
           {/* Right Section */}
           <div className="md:col-span-5">
             <p className="text-lg text-white font-semibold mb-5">Stay Updated</p>
@@ -105,7 +105,13 @@ const Footer: FC = () => {
                   <ul className="text-gray-200 text-sm font-medium space-y-1">
                     {section.links.map((link, i) => (
                       <li key={i} className="cursor-pointer py-[6px] hover:underline">
-                        <Link href={link.href}>{link.label}</Link>
+                        {link.href ? (
+                          <Link href={link.href} id={`footer-link-${section.title.toLowerCase().replace(/\s+/g, '-')}-${link.label.toLowerCase().replace(/\s+/g, '-')}`}>
+                            {link.label}
+                          </Link>
+                        ) : (
+                          <span>{link.label}</span> // Display label without link
+                        )}
                       </li>
                     ))}
                   </ul>

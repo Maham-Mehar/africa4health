@@ -30,11 +30,11 @@ const ContactUs = () => {
 
   return (
     <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-10 items-stretch">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
         {/* Left: Form Section */}
         <form
           onSubmit={handleSubmit}
-          className="space-y-6 flex flex-col justify-between col-span-12 md:col-span-5"
+          className="space-y-6 flex flex-col justify-between col-span-12 md:col-span-6 lg:col-span-5 md:pe-0 pe-5"
         >
           <div>
             <div className="border-l-4 border-l-[#FE9430] mb-6">
@@ -47,7 +47,7 @@ const ContactUs = () => {
               <div key={field.id}>
                 <label
                   htmlFor={field.id}
-                  className="block text-[#621843] font-bold text-base sm:text-lg mb-2"
+                  className="block text-[#621843] font-bold text-base sm:text-lg mb-0 xl:mb-2"
                 >
                   {field.label}
                 </label>
@@ -87,8 +87,8 @@ const ContactUs = () => {
         </form>
 
         {/* Right: Image Section */}
-        <div className="col-span-12 md:col-span-7 flex items-center justify-center">
-          <div className="relative w-full h-[300px] sm:h-[400px] md:h-full rounded-lg overflow-hidden">
+        <div className="col-span-12 md:col-span-6 lg:col-span-7 flex items-center justify-center hidden md:block">
+          <div className="relative w-full h-[400px] lg:h-[500px] xl:h-[600px] rounded-lg overflow-hidden">
             <Image
               src={PngIcons.contact1}
               alt="Contact Us Image"

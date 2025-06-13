@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import React from "react";
 import { waysToGiveData } from "@/Data/faq";
 import { Plus } from "lucide-react";
@@ -33,9 +33,11 @@ const FAQS = () => {
         <p className="max-w-xl text-2xl font-medium mx-auto mb-8">
           Our team is here to help. Contact us to learn more about ways to give or to discuss your giving options.
         </p>
+        <Link href="/contact">
         <button className="bg-[#f97316] hover:bg-orange-600 transition duration-200 py-1 md:py-2 px-6 rounded-full text-[20px] md:text-[24px] font-semibold">
           Contact Us
         </button>
+        </Link>
       </div>
     </div>
   );

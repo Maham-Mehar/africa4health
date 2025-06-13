@@ -41,14 +41,36 @@ const DonateSection = () => {
         </div>
 
         {/* Right Donation Form (5/12) */}
-        <div className="md:col-span-5 bg-white rounded-xl shadow-xl p-8 flex flex-col ">
+        <div className="md:col-span-5 relative bg-white rounded-xl shadow-xl p-8 flex flex-col ">
+          <div className="absolute bottom-0 left-0 ">
+            <Image
+              src={PngIcons.donate1} 
+              alt="Left decorative image"
+              width={200}
+              height={200}
+              className="object-cover "
+            />
+          </div>
+          <div className="absolute bottom-0 right-0">
+            <Image
+              src={PngIcons.donate2} 
+              alt="Right decorative image"
+              width={100}
+              height={100}
+              className="object-cover"
+            />
+          </div>
+
           <div>
             <div className="border-l-4 border-l-[#FE9430] ">
 
-              <h2 className="text-[40px] md:text-[40px] lg:text-[48px] font-extrabold text-[#621843] ps-3">D<span className="text-[#FE9430]">o</span>nate N<span className="text-[#FE9430]">o</span>w</h2>
+              <h2 className="text-[40px] md:text-[40px] lg:text-[48px] font-extrabold text-[#621843] ps-3">
+                D<span className="text-[#FE9430]">o</span>nate N<span className="text-[#FE9430]">o</span>w
+              </h2>
 
               <p className="text-gray-600 text-[22px] mb-6 font-semibold ps-3">MAKE A DIFFERENCE TODAY</p>
             </div>
+
             {/* Tabs */}
             <div className="flex gap-6 mb-6 text-center">
               <button className="text-[#621843] font-bold border-2 px-8 py-2 border-[#621843] bg-[#FAEBF4]">
@@ -64,8 +86,8 @@ const DonateSection = () => {
                   key={item.id}
                   onClick={() => handleAmountClick(item.value)}
                   className={`border px-4 py-2 rounded ${selectedAmount === item.value
-                      ? "bg-[#621843] text-white"
-                      : "text-gray-700 text-[18px] font-semibold"
+                    ? "bg-[#621843] text-white"
+                    : "text-gray-700 text-[18px] font-semibold"
                     }`}
                 >
                   ${item.value.toLocaleString()}
