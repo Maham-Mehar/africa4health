@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/component/Navbar";
-import Footer from "@/component/Footer";
+import { FaHandHoldingHeart } from "react-icons/fa";
 
+import Footer from "@/component/Footer";
+import Link from "next/link";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -29,12 +31,28 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* Navbar */}
         <div className="fixed top-0 z-40 w-full">
           <Navbar />
         </div>
-        <main className="flex-1 pt-[4.5rem]">
+
+        {/* Main content area */}
+        <main className="flex-1 relative pt-[4.5rem]">
           {children}
         </main>
+
+        {/* Sticky button after 100vh */}
+
+        <div className="fixed flex felx-column items-center bottom-4 right-9 z-50 w-full sm:w-auto">
+          <Link href="/donate">
+            <button className="bg-black w-[170px] py-3 text-white rounded-lg flex items-center justify-center space-x-2 hover:bg-white hover:text-black transition duration-300">
+              <span className="pe-2">Donate Now</span>
+              <FaHandHoldingHeart size={24} />
+            </button>
+          </Link>
+        </div>
+
+        {/* Footer */}
         <Footer />
       </body>
     </html>

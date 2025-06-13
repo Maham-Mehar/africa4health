@@ -37,7 +37,7 @@ const Cards = () => {
           {/* Texts below the image */}
           <div className="bg-white py-5 px-4 space-y-1 rounded-b-lg">
             <p className="text-[20px] font-medium text-[#621843]">{item.text2}</p>
-            <p className="text-[20px] font-medium text-[#621843]">{item.text3}</p>
+            {/* <p className="text-[20px] font-medium text-[#621843]">{item.text3}</p> */}
             <p className="text-[20px] font-medium text-[#621843]">{item.text4}</p>
           </div>
         </div>

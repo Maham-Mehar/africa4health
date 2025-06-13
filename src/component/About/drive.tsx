@@ -35,11 +35,11 @@ const DrivesUs = () => {
                 </div>
 
                 {/* Column 2 - Text Content */}
-                <div className="flex flex-col justify-center border-b-2 border-[#999999] pb-8">
-                    <p className="text-base sm:text-lg md:text-lg lg:text-xl text-gray-800 mb-6 max-w-xl">
+                <div className="flex flex-col justify-center border-b-2 border-[#999999] pb-8 pt-3">
+                    <p className="text-base sm:text-lg md:text-lg lg:text-[24px] text-gray-800 mb-6 max-w-xl">
                         {content.text1}
                     </p>
-                    <p className="text-base sm:text-lg md:text-lg lg:text-xl text-gray-800 max-w-xl">
+                    <p className="text-base sm:text-lg md:text-lg lg:text-[24px] text-gray-800 max-w-xl">
                         {content.text2}
                     </p>
                 </div>
