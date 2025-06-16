@@ -54,7 +54,7 @@ const InitiativesSection = () => {
               {/* Close Button (Top Right aligned with ID) */}
               <button
                 onClick={() => toggleInitiative(item.id)}
-                className="absolute top-6 right-6 text-white text-xl bg-white p-2 sm:p-3 text-black rounded-lg"
+                className="absolute top-6 right-6 text-white text-xl bg-white p-2 hover:cursor-pointer sm:p-3 text-black rounded-lg"
               >
                 <RxCross2 className="text-black" />
               </button>

@@ -10,7 +10,7 @@ type FooterLinkSection = {
   title: string;
   links: {
     label: string;
-    href?: string; 
+    href?: string;
   }[];
 };
 
@@ -25,7 +25,7 @@ const footerLinks: FooterLinkSection[] = [
   {
     title: "Initiatives",
     links: [
- { label: "Women's Health", href: "/initiatives?id=1" },
+      { label: "Women's Health", href: "/initiatives?id=1" },
       { label: "Men's Health", href: "/initiatives?id=2" },
       { label: "Children's Health", href: "/initiatives?id=3" },
     ],
@@ -78,7 +78,7 @@ const Footer: FC = () => {
             <p className="text-lg text-white font-semibold mb-5">Stay Updated</p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 mb-8">
-              <div className="bg-[#814669] rounded-full px-4 py-2 flex items-center w-full sm:max-w-xs">
+              <div className="bg-[#814669] rounded-full px-4 py-1 lg:py-2 flex items-center w-full sm:max-w-xs">
                 <input
                   type="email"
                   placeholder="Enter Your Email"
@@ -90,7 +90,7 @@ const Footer: FC = () => {
                 </button>
               </div>
               <button
-                className="px-6 py-2 bg-white text-[#814669] text-sm sm:text-base font-medium border border-gray-300 rounded-full w-full sm:w-auto"
+                className="px-6 py-2 bg-white text-[#814669] text-sm sm:text-base font-medium border border-gray-300 rounded-full w-full hover:cursor-pointer sm:w-auto"
                 aria-label="Subscribe"
               >
                 Subscribe
@@ -100,7 +100,7 @@ const Footer: FC = () => {
             {/* Footer Links */}
             <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 gap-2 lg:gap-6">
               {footerLinks.map((section, index) => (
-                <div key={index} className="lg:text-left text-center">
+                <div key={index} className="md:text-left text-center">
                   <p className="font-bold text-sm lg:text-xl text-white mb-2">{section.title}</p>
                   <ul className="text-gray-200 text-[16px] font-medium space-y-1">
                     {section.links.map((link, i) => (
@@ -110,7 +110,7 @@ const Footer: FC = () => {
                             {link.label}
                           </Link>
                         ) : (
-                          <span>{link.label}</span> // Display label without link
+                          <span>{link.label}</span> 
                         )}
                       </li>
                     ))}
@@ -122,8 +122,11 @@ const Footer: FC = () => {
         </div>
 
         {/* Bottom Footer */}
-        <footer className="border-t border-[#A47F94] mt-10 pt-6 flex flex-col sm:flex-row justify-center items-center text-center text-sm text-gray-300 gap-2 sm:gap-0">
+        <footer className="border-t border-[#A47F94] mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center text-center text-sm text-gray-300 gap-2 sm:gap-0">
           <p>© 2025 Africa for Health. All rights reserved.</p>
+          <a href="mailto:hello@africaforhealth.org" className="underline hover:cursor-pointer">
+            hello@africaforhealth.org
+          </a>
         </footer>
       </div>
     </div>

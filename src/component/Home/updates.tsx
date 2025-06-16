@@ -19,7 +19,7 @@ export default function Home() {
           {/* Button */}
           <div className="flex justify-center mt-7 ">
             <Link href="/viewall">
-              <button className="bg-[#621843] text-white text-lg font-bold px-9 py-2 rounded-full hover:bg-[#72122f] transition">
+              <button className="bg-[#621843] text-white text-lg font-bold px-9 py-2 rounded-full hover:cursor-pointer hover:bg-[#72122f] transition">
                 View All News
               </button>
             </Link>

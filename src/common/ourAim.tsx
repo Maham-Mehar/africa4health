@@ -43,13 +43,13 @@ function JoinUs(props: AboutData) {
                 {/* Button Section */}
                 <div className="w-full flex flex-col sm:flex-row items-center justify-center gap-4 mt-4 md:mt-6 lg:mt-8">
                     <Link href="/donate">
-                        <button className="text-[15px] sm:text-lg font-semibold bg-white text-black px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-full hover:bg-gray-100 transition">
+                        <button className="text-[15px] sm:text-lg font-semibold bg-white text-black px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-full hover:cursor-pointer hover:bg-gray-100 transition">
                             {props.buttonText}
                         </button>
                     </Link>
                     {props.buttonText2 && (
                         <Link href="/contact">
-                            <button className="text-[15px] sm:text-lg font-semibold border-2 border-white bg-transparent text-white px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-full hover:bg-white hover:text-black transition">
+                            <button className="text-[15px] sm:text-lg font-semibold border-2 border-white bg-transparent text-white px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-full hover:cursor-pointer hover:bg-white hover:text-black transition">
                                 {props.buttonText2}
                             </button>
                         </Link>

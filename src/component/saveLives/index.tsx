@@ -57,7 +57,7 @@ const SaveLives: React.FC<SaveLivesProps> = ({ onClose }) => {
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 p-1 rounded-full hover:bg-gray-100 transition text-white hover:text-black z-20"
+          className="absolute top-3 right-3 p-1 rounded-full hover:bg-gray-100 transition hover:cursor-pointer text-white hover:text-black z-20"
           aria-label="Close popup"
         >
           <X size={24} />
@@ -99,7 +99,7 @@ const SaveLives: React.FC<SaveLivesProps> = ({ onClose }) => {
           </p>
           <div className='flex justify-center items-center'>
             <Link href="/donate">
-              <button className="bg-[#50023F] text-white font-semibold text-[20px] px-10 py-2 rounded-full hover:bg-[#6c255e] transition">
+              <button className="bg-[#50023F] text-white font-semibold text-[20px] px-10 py-2 rounded-full hover:cursor-pointer hover:bg-[#6c255e] transition">
                 Donate Now
               </button>
             </Link>

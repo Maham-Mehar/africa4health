@@ -33,7 +33,7 @@ const ViewAll = () => {
               <button
                 key={index}
                 onClick={() => setActiveTab(tab.label)}
-                className={`pb-1 transition ${activeTab === tab.label
+                className={`pb-1 transition hover:cursor-pointer ${activeTab === tab.label
                     ? "text-[#621843] border-b-2 border-[#621843]"
                     : "text-gray-500"
                   }`}

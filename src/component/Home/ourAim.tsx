@@ -39,7 +39,7 @@ const OurAim = () => {
                     {/* CTA Button */}
                     <div className="text-center mt-8">
                         <Link href="about">
-                            <button className="bg-[#FE9430] text-white text-base font-bold px-6 py-3 rounded-full hover:bg-[#72122f] transition">
+                            <button className="bg-[#FE9430] text-white text-base font-bold px-6 py-3 rounded-full hover:cursor-pointer hover:bg-[#72122f] transition">
                                 Learn more about our impact
                             </button>
                         </Link>

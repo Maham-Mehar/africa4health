@@ -73,7 +73,7 @@ const DonateSection = () => {
 
             {/* Tabs */}
             <div className="flex gap-6 mb-6 text-center">
-              <button className="text-[#621843] font-bold border-2 px-3 md:px-6 lg:px-8 py-2 border-[#621843] bg-[#FAEBF4]">
+              <button className="text-[#621843] font-bold border-2 px-3 md:px-6 lg:px-8 py-2 hover:cursor-pointer border-[#621843] bg-[#FAEBF4]">
                 One Time
               </button>
               <button className="text-gray-400 font-medium">Monthly</button>
@@ -85,7 +85,7 @@ const DonateSection = () => {
                 <button
                   key={item.id}
                   onClick={() => handleAmountClick(item.value)}
-                  className={`border px-4 py-2 rounded ${selectedAmount === item.value
+                  className={`border px-4 py-2 hover:cursor-pointer rounded ${selectedAmount === item.value
                     ? "bg-[#621843] text-white"
                     : "text-gray-700 text-[18px] font-semibold"
                     }`}
@@ -118,7 +118,7 @@ const DonateSection = () => {
             </div>
           </div>
 
-          <button className="w-full bg-[#621843] text-[24px] font-semibold text-white py-3 mt-5 rounded-full hover:bg-[#4e1334] transition">
+          <button className="w-full bg-[#621843] text-[24px] font-semibold text-white py-3 mt-5 hover:cursor-pointer rounded-full hover:bg-[#4e1334] transition">
             Donate Now
           </button>
         </div>

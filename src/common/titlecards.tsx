@@ -15,19 +15,19 @@ const Updates = ({ cardData }: UpdatesProps) => {
             key={item.id}
             className="rounded-lg overflow-hidden  hover:shadow-md transition duration-300 bg-white"
           >
-            
-         <div className="relative w-full h-[400px] sm:h-[400px] md:h-[400px]">
-  <div className="absolute bottom-4 left-2 right-1 z-10">
-    <p className="text-[20px] md:text-[22px] lg:text-[20px] xl:text-[24px] font-bold text-white leading-7">{item.heading}</p>
-  </div>
-  <Image
-    src={item.image}
-    alt={item.title}
-    fill
-    className="object-cover"
-    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 300px"
-  />
-</div>
+
+            <div className="relative w-full h-[400px] sm:h-[400px] md:h-[400px]">
+              <div className="absolute bottom-4 left-2 right-1 z-10">
+                <p className="text-[20px] md:text-[22px] lg:text-[20px] xl:text-[24px] font-bold text-white leading-7">{item.heading}</p>
+              </div>
+              <Image
+                src={item.image}
+                alt={item.title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 300px"
+              />
+            </div>
 
             {/* Text */}
             <div className="p-4">
@@ -36,7 +36,7 @@ const Updates = ({ cardData }: UpdatesProps) => {
                   ? item.description.slice(0, 90) + "..."
                   : item.description}
                 <Link href={`/newsDetail/${item.id}`}>
-                  <span className="text-[#621843] font-semibold hover:underline ml-1">
+                  <span className="text-[#621843] font-semibold hover:cursor-pointer hover:underline ml-1">
                     Learn More
                   </span>
                 </Link>
