@@ -1,8 +1,9 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
+
 import Image from "next/image";
 import PngIcons from "@/Icons/pngIcons";
+import Link from "next/link";
 const navItems = [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },

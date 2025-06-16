@@ -41,22 +41,22 @@ const footerLinks: FooterLinkSection[] = [
 
 const Footer: FC = () => {
   return (
-    <div className="bg-[#621843] pt-10 pb-6 px-3">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="bg-[#621843] pt-10 pb-6 px-4">
+      <div className="max-w-7xl mx-auto ">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-y-4 md:gap-y-10 md:gap-x-12">
           {/* Left Section */}
-          <div className="md:col-span-7 flex flex-col items-start">
+          <div className="md:col-span-5 lg:col-span-6 xl:col-span-7 flex flex-col items-start">
             {/* Responsive Logo */}
             <Image
               src={PngIcons.footerlogo}
               alt="Africa For Health Logo"
               width={228}
               height={140}
-              className="mb-4 w-[120px] sm:w-[220px] md:w-[260px] h-auto"
+              className="mb-4 w-[120px] md:w-[170px] lg:w-[190px] xl:w-[260px] h-auto"
             />
 
             {/* Responsive Text */}
-            <p className="text-white text-base sm:text-lg md:text-xl lg:text-2xl font-extrabold mt-2 sm:mt-6 max-w-xs sm:max-w-sm">
+            <p className="text-white text-base sm:text-lg md:text-xl lg:text-2xl font-extrabold mt-2 sm:mt-6 max-w-[300px] sm:max-w-md">
               Improving Health Outcomes Across Africa
             </p>
 
@@ -74,7 +74,7 @@ const Footer: FC = () => {
           </div>
 
           {/* Right Section */}
-          <div className="md:col-span-5">
+          <div className=" md:col-span-7 lg:col-span-6 xl:col-span-5">
             <p className="text-lg text-white font-semibold mb-5">Stay Updated</p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 mb-8">
@@ -98,11 +98,11 @@ const Footer: FC = () => {
             </div>
 
             {/* Footer Links */}
-            <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 gap-2 lg:gap-6">
               {footerLinks.map((section, index) => (
                 <div key={index} className="lg:text-left text-center">
-                  <p className="font-bold text-lg text-white mb-2">{section.title}</p>
-                  <ul className="text-gray-200 text-sm font-medium space-y-1">
+                  <p className="font-bold text-sm lg:text-xl text-white mb-2">{section.title}</p>
+                  <ul className="text-gray-200 text-[16px] font-medium space-y-1">
                     {section.links.map((link, i) => (
                       <li key={i} className="cursor-pointer py-[6px] hover:underline">
                         {link.href ? (

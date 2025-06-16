@@ -6,6 +6,7 @@ import { FaHandHoldingHeart } from "react-icons/fa";
 
 import Footer from "@/component/Footer";
 import Link from "next/link";
+import PopupManager from "@/component/popupManager/manage";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -35,7 +36,7 @@ export default function RootLayout({
         <div className="fixed top-0 z-40 w-full">
           <Navbar />
         </div>
-
+        <PopupManager />
         {/* Main content area */}
         <main className="flex-1 relative pt-[4.5rem]">
           {children}

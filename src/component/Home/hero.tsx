@@ -46,7 +46,7 @@ const Hero = () => {
 
       {/* Cards at the bottom left aligned like Figma */}
       <div className="hidden md:block">
-        <div className="absolute bottom-[22px] px-4 left-1/2 transform -translate-x-1/2 rounded-xl xl:px-8 py-2 lg:py-3 xl:py-4 z-20 w-full max-w-7xl bg-[#FE9430] flex justify-between">
+        <div className="absolute bottom-[22px] px-4 left-1/2 transform -translate-x-1/2 rounded-xl xl:px-8 py-2 lg:py-3 2xl:py-4 z-20 w-full max-w-7xl bg-[#FE9430] flex justify-between">
           <div>
             <p className="text-[20px] lg:text-[26px] xl:text-[32px] font-extrabold text-[#621843] text-center">
               350+ <span className="text-white">villages</span>
@@ -66,7 +66,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-10 z-20 left-60 lg:left-80 xl:left-130 bg-[#621843] text-center px-3 lg:px-4 xl:px-6 py-4">
+        <div className="absolute bottom-10 z-20 left-60 lg:left-80 xl:left-115 2xl:left-130 bg-[#621843] text-center px-3 lg:px-4 xl:px-6 py-4">
           <p className="text-[20px] lg:text-[26px] xl:text-[32px] font-extrabold text-[#FE9430]">
             95K+ <span className="text-white">patients treated</span>
           </p>

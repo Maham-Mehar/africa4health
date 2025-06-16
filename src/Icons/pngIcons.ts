@@ -68,5 +68,11 @@ donate1: "/images/donate1.png",
 donate2: "/images/donate2.png",
 // Viewall
 viewall: "/images/viewall.png",
+
+// Popup slider
+slide1: "/images/slide1.png",
+slide2: "/images/slide2.png",
+slide3: "/images/slide3.png",
+slide4: "/images/slide4.png"
 }
 export default PngIcons;
