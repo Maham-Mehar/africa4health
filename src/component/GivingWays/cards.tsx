@@ -8,11 +8,10 @@ const Cards = () => {
     <div className="max-w-[83rem] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6 mt-[60px]">
       {CardData.map((item) => (
         <div key={item.id} className="overflow-hidden group">
-          {/* Image section with overlayed text1 (clickable) */}
           <div className="relative">
             <Image
               src={item.image}
-              alt={item.text2}
+              alt="hello"
               width={298}
               height={307}
               className="object-cover w-full h-auto rounded-t-lg"
