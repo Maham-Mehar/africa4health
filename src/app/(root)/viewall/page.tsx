@@ -16,9 +16,9 @@ const ViewAll = () => {
 
   return (
     <Fragment>
-      <div className="max-w-7xl mx-auto ">
+      <div className="max-w-7xl mx-auto px-4">
 
-        <div className="text-center my-12 px-4 sm:px-6 lg:px-8">
+        <div className="text-center mt-12 px-0 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#621843]">
             News <span className="text-[#F37021]">&</span> Updates
           </h2>
@@ -28,7 +28,7 @@ const ViewAll = () => {
           </p>
 
           {/* Tabs */}
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mt-6 text-base sm:text-lg md:text-xl font-bold">
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-6 mt-5 text-[15px] sm:text-lg md:text-xl font-bold">
             {newsTabs.map((tab, index) => (
               <button
                 key={index}

@@ -1,14 +1,12 @@
 "use client";
 import { useState } from "react";
-
-import Image from "next/image";
-import PngIcons from "@/Icons/pngIcons";
 import Link from "next/link";
+import PngIcons from "@/Icons/pngIcons";
 const navItems = [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
     { label: "Initiatives", href: "/initiatives" },
-    { label: "Ways to Give", href: "/ways" },
+    { label: "Ways to Give", href: "/givingways" },
     { label: "Get Involved", href: "/getinvolved" },
 ];
 
