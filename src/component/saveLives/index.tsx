@@ -1,14 +1,19 @@
 'use client';
+
 import Link from "next/link";
 import React from 'react';
-import Slider from 'react-slick';
+import Slider, { Settings } from 'react-slick';
 import { X } from 'lucide-react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import PngIcons from '@/Icons/pngIcons';
 
-const SaveLives = ({ onClose }) => {
-  const sliderSettings = {
+type SaveLivesProps = {
+  onClose: () => void;
+};
+
+const SaveLives: React.FC<SaveLivesProps> = ({ onClose }) => {
+  const sliderSettings: Settings = {
     dots: true,
     infinite: true,
     arrows: false,
@@ -17,7 +22,7 @@ const SaveLives = ({ onClose }) => {
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
-    appendDots: dots => (
+    appendDots: (dots: React.ReactNode) => (
       <div
         style={{
           position: 'absolute',
@@ -47,8 +52,8 @@ const SaveLives = ({ onClose }) => {
   ];
 
   return (
-    <div className="fixed top-20 inset-0 z-50 bg-transparent bg-opacity-50 flex justify-center items-center p-4 ">
-      <div className="relative bg-white rounded-xl max-w-lg w-full shadow-lg overflow-hidden ">
+    <div className="fixed top-20 inset-0 z-50 bg-transparent bg-opacity-50 flex justify-center items-center p-4">
+      <div className="relative bg-white rounded-xl max-w-lg w-full shadow-lg overflow-hidden">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -58,7 +63,7 @@ const SaveLives = ({ onClose }) => {
           <X size={24} />
         </button>
 
-        {/* Image Slider with increased height */}
+        {/* Image Slider */}
         <div className="relative h-62 w-full">
           <Slider {...sliderSettings}>
             {imageSlides.map((src, index) => (
@@ -94,9 +99,9 @@ const SaveLives = ({ onClose }) => {
           </p>
           <div className='flex justify-center items-center'>
             <Link href="/donate">
-            <button className="bg-[#50023F] text-white font-semibold text-[20px] px-10 py-2 rounded-full hover:bg-[#6c255e] transition">
-              Donate Now
-            </button>
+              <button className="bg-[#50023F] text-white font-semibold text-[20px] px-10 py-2 rounded-full hover:bg-[#6c255e] transition">
+                Donate Now
+              </button>
             </Link>
           </div>
         </div>
