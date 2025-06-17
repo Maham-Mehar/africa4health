@@ -4,9 +4,9 @@ import { waysToGiveData } from "@/Data/faq";
 import { Plus } from "lucide-react";
 
 const FAQS = () => (
-  <div className="py-[100px]">
+  <div className="pt-[70px]">
     {/* FAQ Cards */}
-    <div className="bg-[#f97316] text-white py-10 px-6">
+    <div className="bg-[#f97316] text-white pt-10 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 xl:gap-6">
         {waysToGiveData.map((item) => (
           <div key={item.id} className="text-center p-4 border-r border-white">

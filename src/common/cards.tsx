@@ -5,7 +5,7 @@ type ParticipantItem = { id: number; image: string; text: string };
 type ParticipentsProps = { data: ParticipantItem[]; title: string; titleText: string };
 
 const Participents = ({ data, title, titleText }: ParticipentsProps) => (
-  <section className="bg-white py-12">
+  <section className="bg-white pt-8">
     <div className="max-w-7xl mx-auto px-4 lg:px-2 xl:px-6 py-10">
       <div className="mb-12 text-center">
         <h2 className="text-3xl md:text-[40px] font-extrabold text-[#621843] mb-4">{title}</h2>
