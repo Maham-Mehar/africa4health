@@ -122,11 +122,11 @@ const Footer: FC = () => {
         </div>
 
         {/* Bottom Footer */}
-        <footer className="border-t border-[#A47F94] mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center text-center text-sm text-gray-300 gap-2 sm:gap-0">
+        <footer className="border-t border-[#A47F94] mt-10 pt-6 flex flex-col sm:flex-row justify-center items-center text-center text-sm text-gray-300 gap-2 sm:gap-0">
           <p>© 2025 Africa for Health. All rights reserved.</p>
-          <a href="mailto:hello@africaforhealth.org" className="underline hover:cursor-pointer">
+          {/* <a href="mailto:hello@africaforhealth.org" className="underline hover:cursor-pointer">
             hello@africaforhealth.org
-          </a>
+          </a> */}
         </footer>
       </div>
     </div>

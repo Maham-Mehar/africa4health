@@ -11,22 +11,18 @@ const navItems = [
   { label: "Ways to Give", href: "/givingways" },
   { label: "Get Involved", href: "/getinvolved" },
 ];
-
 const Drawer = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) => {
   const pathname = usePathname();
-
   return (
     <>
       <div
-        className={`fixed inset-0 z-20 bg-black/30 transition-opacity duration-300 ${
-          isOpen ? "opacity-100 visible" : "opacity-0 invisible"
-        }`}
+        className={`fixed inset-0 z-20 bg-black/30 transition-opacity duration-300 ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"
+          }`}
         onClick={onClose}
       />
       <div
-        className={`fixed inset-y-0 right-0 w-64 bg-white z-30 transform transition-transform duration-300 ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed inset-y-0 right-0 w-64 bg-white z-30 transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"
+          }`}
         onClick={(e) => e.stopPropagation()}
       >
         <div className="p-4">
@@ -43,11 +39,10 @@ const Drawer = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) =
                 <li key={href}>
                   <Link
                     href={href}
-                    className={`text-base transition ${
-                      isActive
+                    className={`text-base transition ${isActive
                         ? "text-[#621843] font-bold"
                         : "text-[#621843]/70 hover:text-[#621843]"
-                    }`}
+                      }`}
                   >
                     {label}
                   </Link>
@@ -67,7 +62,6 @@ const Drawer = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) =
     </>
   );
 };
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
@@ -88,18 +82,16 @@ const Navbar = () => {
               <Link
                 key={href}
                 href={href}
-                className={`text-base transition ${
-                  isActive
+                className={`text-base transition ${isActive
                     ? "text-[#621843] font-bold"
                     : "text-[#621843]/70 hover:text-[#621843]"
-                }`}
+                  }`}
               >
                 {label}
               </Link>
             );
           })}
         </nav>
-
         {/* Contact Button */}
         <div className="hidden md:block">
           <Link href="/contact">

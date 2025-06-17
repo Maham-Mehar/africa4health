@@ -26,5 +26,4 @@ export const healthData: HealthItem[] = [
     text: "Specialized programs ensuring healthy development and care for Africa's youngest population.",
     image: PngIcons.c12,
   },
-  // …add more entries as needed
 ];

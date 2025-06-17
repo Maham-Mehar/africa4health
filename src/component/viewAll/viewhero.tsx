@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { newsTabs, newsCard } from "@/Data/news"; 
+import { newsTabs, newsCard } from "@/Data/news";
 import PngIcons from "@/Icons/pngIcons";
 import { cardData, updateData } from "@/Data/updates";
 

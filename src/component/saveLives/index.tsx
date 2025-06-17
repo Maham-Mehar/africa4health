@@ -1,5 +1,4 @@
 'use client';
-
 import Link from "next/link";
 import React from 'react';
 import Slider, { Settings } from 'react-slick';
@@ -11,7 +10,6 @@ import PngIcons from '@/Icons/pngIcons';
 type SaveLivesProps = {
   onClose: () => void;
 };
-
 const SaveLives: React.FC<SaveLivesProps> = ({ onClose }) => {
   const sliderSettings: Settings = {
     dots: true,

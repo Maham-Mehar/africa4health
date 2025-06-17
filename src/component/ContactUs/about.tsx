@@ -1,6 +1,6 @@
 "use client";
 import PngIcons from "@/Icons/pngIcons";
-import { Plus } from "lucide-react"; 
+import { Plus } from "lucide-react";
 import React from "react";
 
 // Type for the data
@@ -20,7 +20,7 @@ const waysToGiveData: WayToGive[] = [
 
 const ContactAbout = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-5">
+    <div className="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-5">
       <div className="grid md:grid-cols-2 grid-cols-1 gap-5 lg:gap-10">
         {/* Left Image Section */}
         <div className="flex items-center justify-center ps-4 md:ps=0">
@@ -30,7 +30,6 @@ const ContactAbout = () => {
             className="rounded-lg w-full h-full max-h-[630px] object-cover"
           />
         </div>
-
         {/* Right Info Cards Section */}
         <div className="rounded-lg flex flex-col justify-center">
           {waysToGiveData.map((item) => (
@@ -49,5 +48,4 @@ const ContactAbout = () => {
     </div>
   );
 };
-
 export default ContactAbout;

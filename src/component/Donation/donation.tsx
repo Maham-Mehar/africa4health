@@ -6,119 +6,64 @@ import PngIcons from "@/Icons/pngIcons";
 
 const DonateSection = () => {
   const [selectedAmount, setSelectedAmount] = useState<number | null>(null);
-  const [customAmount, setCustomAmount] = useState<string>("");
-
-  const handleAmountClick = (amount: number) => {
-    setSelectedAmount(amount);
-    setCustomAmount("");
-  };
+  const [customAmount, setCustomAmount] = useState("");
 
   return (
     <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 lg:gap-8 xl:gap-10 px-4 items-stretch">
-        {/* Left Image Column (7/12) */}
-        <div className="md:col-span-6 lg:col-span-7 flex flex-col gap-8">
-          <div className="relative w-full h-[500px] overflow-hidden rounded">
-            <Image
-              src={PngIcons.donate}
-              alt="Donation Impact"
-              fill
-              className="object-cover rounded"
-            />
+      <div className="max-w-7xl mx-auto grid md:grid-cols-12 gap-6 px-4">
+        {/* Left */}
+        <div className="md:col-span-7 flex flex-col gap-6">
+          <div className="relative h-[500px] w-full rounded overflow-hidden">
+            <Image src={PngIcons.donate} alt="Donate" fill className="object-cover" />
           </div>
-
-          {/* Impact Text under the image */}
-          <div className="text-left px-1">
-            <p className="text-base md:text-[18px] lg:text-[20px] font-normal text-gray-700 mb-4">
-              Your impact will help provide essential healthcare services to communities that need them most.
-              Your generosity directly impacts the lives of individuals across Africa.
+          <div>
+            <p className="text-gray-700 text-[18px] mb-4">
+              Your impact helps bring essential healthcare services to communities across Africa.
             </p>
-            <p className="text-base md:text-[18px] lg:text-[20px] font-normal text-gray-600">
-              From training healthcare workers to building medical facilities and providing life-saving
-              treatments, your support enables us to continue our vital work and expand our reach.
+            <p className="text-gray-600 text-[18px]">
+              From training workers to providing treatments, your support helps us grow our mission.
             </p>
           </div>
         </div>
-
-        {/* Right Donation Form (5/12) */}
-        <div className="md:col-span-6 lg:col-span-5 relative bg-white rounded-xl shadow-xl py-8 px-3 md:px-4 lg:px-6 xl:px-8 flex flex-col ">
-          <div className="absolute bottom-0 left-0 hidden md:block ">
-            <Image
-              src={PngIcons.donate1} 
-              alt="Left decorative image"
-              width={200}
-              height={200}
-              className="object-cover"
-            />
+        {/* Right */}
+        <div className="md:col-span-5 bg-white rounded-xl shadow-xl p-6 relative">
+          <Image src={PngIcons.donate1} alt="decor" width={200} height={200} className="hidden md:block absolute bottom-0 left-0" />
+          <Image src={PngIcons.donate2} alt="decor" width={100} height={100} className="hidden md:block absolute bottom-0 right-0" />
+          <div className="border-l-4 border-[#FE9430] mb-4 ps-3">
+            <h2 className="text-[40px] font-extrabold text-[#621843]">D<span className="text-[#FE9430]">o</span>nate N<span className="text-[#FE9430]">o</span>w</h2>
+            <p className="text-gray-600 text-[20px] font-semibold">MAKE A DIFFERENCE TODAY</p>
           </div>
-          <div className="absolute bottom-0 hidden md:block right-0">
-            <Image
-              src={PngIcons.donate2} 
-              alt="Right decorative image"
-              width={100}
-              height={100}
-              className="object-cover"
-            />
+          <div className="flex gap-4 mb-4">
+            <button className="text-[#621843] font-bold border-2 px-5 py-2 bg-[#FAEBF4] border-[#621843]">One Time</button>
+            <button className="text-gray-400">Monthly</button>
           </div>
-
-          <div>
-            <div className="border-l-4 border-l-[#FE9430] ">
-
-              <h2 className="text-[34px] md:text-[40px] lg:text-[48px] font-extrabold text-[#621843] ps-3">
-                D<span className="text-[#FE9430]">o</span>nate N<span className="text-[#FE9430]">o</span>w
-              </h2>
-
-              <p className="text-gray-600 text-[18px] md:text-[22px] mb-6 font-semibold ps-3">MAKE A DIFFERENCE TODAY</p>
-            </div>
-
-            {/* Tabs */}
-            <div className="flex gap-6 mb-6 text-center">
-              <button className="text-[#621843] font-bold border-2 px-3 md:px-6 lg:px-8 py-2 hover:cursor-pointer border-[#621843] bg-[#FAEBF4]">
-                One Time
+          <div className="grid grid-cols-3 gap-3 mb-4">
+            {donationAmounts.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => { setSelectedAmount(item.value); setCustomAmount(""); }}
+                className={`px-4 py-2 rounded border ${selectedAmount === item.value ? "bg-[#621843] text-white" : "text-gray-700 font-semibold"}`}
+              >
+                ${item.value}
               </button>
-              <button className="text-gray-400 font-medium">Monthly</button>
-            </div>
-
-            {/* Amounts */}
-            <div className="grid grid-cols-3 gap-4 mb-4">
-              {donationAmounts.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => handleAmountClick(item.value)}
-                  className={`border px-4 py-2 hover:cursor-pointer rounded ${selectedAmount === item.value
-                    ? "bg-[#621843] text-white"
-                    : "text-gray-700 text-[18px] font-semibold"
-                    }`}
-                >
-                  ${item.value.toLocaleString()}
-                </button>
-              ))}
-            </div>
-
-            {/* Custom Input */}
-            <div className="flex items-center rounded-lg gap-3 mb-6 border-2 border-[#B3B3B3] px-2">
-              <span className="absolute text-[#621843] text-[18px]">
-                $
-              </span>
-              <input
-                type="number"
-                placeholder="Enter Custom Amount"
-                value={customAmount}
-                onChange={(e) => {
-                  setCustomAmount(e.target.value);
-                  setSelectedAmount(null);
-                }}
-                className="w-full py-3 pl-4 outline-none "
-              />
-              <select className="border-l-2 border-l-[#B3B3B3] text-[#621843] text-[18px] font-bold py-2 px-2 rounded text-gray-600">
-                <option>USD</option>
-                <option>EUR</option>
-                <option>GBP</option>
-              </select>
-            </div>
+            ))}
           </div>
-
-          <button className="w-full bg-[#621843] text-[24px] font-semibold text-white py-3 mt-5 hover:cursor-pointer rounded-full hover:bg-[#4e1334] transition">
+          <div className="flex items-center border-2 border-[#B3B3B3] rounded-lg gap-2 px-3 mb-5">
+            <span className="text-[#621843]">$</span>
+            <input
+              type="number"
+              placeholder="Enter Custom Amount"
+              value={customAmount}
+              onChange={(e) => { setCustomAmount(e.target.value); setSelectedAmount(null); }}
+              className="w-full py-3 outline-none"
+            />
+            <select className="border-l-2 border-[#B3B3B3] text-[#621843] font-bold px-2">
+              <option>USD</option>
+              <option>EUR</option>
+              <option>GBP</option>
+            </select>
+          </div>
+          <button className="w-full bg-[#621843] text-white py-3 rounded-full text-[20px] hover:bg-[#4e1334]">
             Donate Now
           </button>
         </div>
@@ -126,5 +71,4 @@ const DonateSection = () => {
     </section>
   );
 };
-
 export default DonateSection;

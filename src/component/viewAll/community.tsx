@@ -3,7 +3,7 @@ const OurCommunity = () => {
     return (
         <HeroSection
             heading="Join Our Commuinty"
-            text="Your contribution, no matter the size, helps us provide essential healthcare services to communities across Africa. Join us in making a difference."
+            text="Together, we can make a significant impact on healthcare access and outcomes across Africa."
             buttonText="Make a Donation"
         />
     );

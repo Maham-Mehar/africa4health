@@ -6,7 +6,7 @@ import { cardData } from "@/Data/updates";
 export default function Home() {
   return (
     <main>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-5 md:pt-6 lg:pt-10 pb-5 md:pb-10 lg:pb-15">
+      <div className="bg-white max-w-7xl mx-auto px-4 sm:px-6 pt-5 md:pt-6 lg:pt-10 pb-5 md:pb-10 lg:pb-15">
         {/* other sections... */}
         <div className="mb-10 ">
           <h2 className="text-2xl sm:text-3xl md:text-[32px] font-bold text-[#621843] mb-4 text-center">

@@ -1,7 +1,7 @@
 "use client";
 import PngIcons from "@/Icons/pngIcons";
 import Link from "next/link";
-
+// stat card Data //
 const stats = [
   {
     value: "350+",
@@ -26,7 +26,7 @@ const stats = [
 
 const Hero = () => {
   return (
-    <div className="relative flex items-center h-[320px] md:h-screen overflow-hidden">
+    <div className="relative bg-white flex items-center h-[320px] md:h-screen overflow-hidden">
       <div className="absolute right-0 top-0 h-[320px] md:h-[700px] w-[380px] md:w-full z-0 bg-cover bg-center sm:hidden md:block" style={{ backgroundImage: `url(${PngIcons.hero})` }}></div>
 
       {/* Faded strip at the bottom */}
@@ -46,7 +46,7 @@ const Hero = () => {
         </Link>
       </div>
 
-      {/* Stats Cards (Centered and Col-4 Style) */}
+      {/* Stats Cards */}
       <div>
         <div className="hidden md:block absolute bottom-6 flex items-center left-0 right-0 w-full md:h-[90px] lg:h-[110px] xl:h-[140px] max-w-7xl mx-auto z-20 px-4 bg-[#FE9430] rounded-xl">
           <div className="grid grid-cols-1 md:grid-cols-3 text-center ">
